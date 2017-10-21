@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>提示页面</title>
+		
+		<link rel="stylesheet" href="css/sinup and login and  retrievepassword.css">
+	</head>
+ 	<body>
+		<div id="muyee_tip">
+			<div class="tip">
+			<p>是否绑定<a href="muyee_bind_QQWCHAT.html">QQ</a></p>
+			<p>是否绑定<a href="muyee_bind_QQWCHAT.html">微信</a></p>
+			<p onclick="window.location.href='muyee_join_hy.html?id=x'">充值<a>99</a>元加入会员，即可赠送pos机和不定期推送下款子口，全<a>免费</a></p>
+			<p><span id="show"></span> </p>
+		</div>
+			
+		</div>
+		<br />
+		<script src="js/ydwCityfooter.js"></script>
+	</body>
+	<script> 
+var t=10;//设定跳转的时间 
+setInterval("refer()",1000); //启动1秒定时 
+function refer(){ 
+if(t==0){ 
+location="muyee_Loanindex.html"; //#设定跳转的链接地址 
+} 
+document.getElementById('show').innerHTML="登录成功"+t+"秒跳转主页面"; // 显示倒计时 
+t--; // 计数器递减 
+//本文转自： 
+} 
+</script> 
+
+</html>

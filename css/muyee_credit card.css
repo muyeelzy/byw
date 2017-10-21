@@ -1,0 +1,292 @@
+#cr_ca{
+	position: relative;
+	
+height: 860px;
+width:100%;
+margin: 0 auto;
+
+background: no-repeat url(../img/bg.jpg) center;
+
+background-size:cover;
+
+}
+#cr_sq{
+
+background-color:whitesmoke;
+	height: 800px;
+	width: 1000px;
+	border-width: 1px;
+position: relative;
+ opacity: 0.99;
+box-shadow:-1px 2px 5px 5px #EEEEEE;
+     margin: 0 auto;
+	top: 40px;
+
+}
+.formbox{width:960px;margin:10px auto ;top:15px; position: relative;}
+.formcon{height:500px;width:960px;border-top:solid 1px #ddd;top:33px; position: relative;}
+
+
+/* flow_steps */
+.flow_steps{height:53px; top: 35px;position: relative;}
+.flow_steps li{float:left;height: 50px; width:300px;line-height:50px;text-align:center;font-weight:bold;color: #777777;font-size: 14px; border-bottom: #E1E1E1; border-width: 1px;}
+.flow_steps li.done{background-position:100% -46px;}
+.flow_steps li.current_prev{background-position:100% -23px;color: #777777;}
+.flow_steps li#qzfs.current,.flow_steps li.last{background-image:none;}
+.flow_steps li.current{
+	border-bottom: #FF5B1E solid; border-width: 2px;
+}
+.formbox .fp{
+	color:#777777;
+	font-size: 15px;
+}
+.formbox .fp a{
+	color: #999999;
+	font-size: 11px;
+	}
+	.formcon label{
+		font-size: 14px;
+	}
+	.formcon p .pwdTrigger{
+		height: 40px;
+		width: 314px;
+	}
+		.formcon p .pwdTrigger1{
+		vertical-align:middle;
+		position: relative;
+		top:-1px;
+	
+		height: 40px;
+		width: 50px;
+	}
+	#card_nv{
+		height: 17px;
+	}
+		#card_nan{
+		height: 17px;
+	}
+	#get_Personal_information{
+		height: 45px;
+		width: 314px;
+		background-color: #FF5B1E;
+		color: white;
+		text-align: center;
+		border: 0px;
+		margin-left: 70px;
+		line-height: 35px;
+		cursor: pointer;
+	}
+	#get_Personal_information:hover{
+	background-color: peachpuff;
+	color: white;
+	}
+		.formcon p{
+			position: relative;
+	top:30px ;
+		line-height: 86px;
+		}
+#one{ 
+	height:500px;
+	width: 900px;
+	
+	position: relative;
+		margin: 48px;
+		
+}
+#one .card_cr{
+	
+	position: absolute;
+	right: 20px;
+	top: 0px;
+		width: 300px;
+	height: 500px;
+	
+	float: right;
+	
+}
+#one .card_cr p{
+	margin-top:20px;
+	height: 45px;
+	width: 100%;
+	color: #666666;
+	background-color: #E5E5E5;
+	line-height: 45px;
+	}
+	#one .card_cr ul li{
+		line-height: 44px;
+	border-bottom: #E1E1E1 solid;
+	border-width: 1px;
+		height: 44px;
+		width: 100%;
+	}
+/*城市选择*/
+img{vertical-align:middle;}
+i{font-style:normal;}
+.infolist{padding-left:5em;font-size:14px;position:relative;color:#494949;min-height:38px;margin-top:50px;box-sizing:border-box;-moz-box-sizing:border-box;-webkit-box-sizing:border-box;width:100%;float:left;clear:both;z-index: 1000; }
+lable{position:absolute;width:5em;left:0;top:0;overflow:hidden;height:22px;padding:8px 0;line-height:22px;}
+
+.infolist .liststyle span{position:relative;height:36px;line-height:36px;display:inline-block;border:1px solid #E8E8E8;border-radius:5px;padding:0 0 0 8px;cursor:pointer;background:white;float:left;margin-right:9px;margin-bottom:10px;}
+.infolist .liststyle span i{display:inline-block;height:36px;line-height:36px;padding-right:30px;position:relative;}
+.infolist .liststyle span i:after{content:"";display:block;width:20px;height:36px;position:absolute;right:0;top:0;background-image:url(../img/jt_nor.png);background-repeat:no-repeat;background-position:0 center;background-size:10px auto;}
+
+.infolist .liststyle span ul{width:100%;border-radius:0 0 5px 5px;position:absolute;border:1px solid #E8E8E8;background:white;left:-1px;top:36px;border-top:0;margin-bottom:10px;display:none;z-index:10;}
+.infolist .liststyle span ul li{width:100%;float:left;overflow:hidden;border-top:1px solid #E8E8E8;}
+.infolist .liststyle span ul li:first-child{border-top:0;}
+.infolist .liststyle span ul li a{display:block;height:36px;line-height:36px;padding:0 8px;color:#494949;}
+
+/*two*/
+#two{
+	
+	height:500px;
+	width: 900px;
+	
+	position: relative;
+		margin: 48px;
+		/**/
+}
+#two p{
+	line-height: 55px;
+	}
+	#two .pwdTriggertwo{
+	height: 40px;
+	margin-left: 8px;
+	
+		width: 250px;
+	}
+	#two  .le{
+		letter-spacing: 5px;
+	}
+#two .pwdTrigger1{
+	height: 15px;
+	
+		width: 40px;
+	}
+	#two .pwdTrigger2{
+	height: 40px;
+	margin-left: 14px;
+		width: 250px;
+	}
+	#two .le1{
+		letter-spacing: 7px;
+	}
+		#two .le2{
+		letter-spacing: 3px;
+	}
+	#two .le4{
+		letter-spacing: 4px;
+	}
+	#two select{
+		border: #E1E1E1 solid;
+		border-width: 1px;
+		height: 40px;
+		width: 250px;
+		border-radius: 2px;
+	}
+#two .card_cr{
+	
+	position: absolute;
+	right: 20px;
+	top: 0px;
+		width: 300px;
+	height: 500px;
+	
+	float: right;
+	
+}
+#two .card_cr p{
+	margin-top:8px;
+	height: 45px;
+	width: 100%;
+	color: #666666;
+	background-color: #E5E5E5;
+	line-height: 45px;
+	}
+	#two .card_cr ul li{
+		line-height: 44px;
+	border-bottom: #E1E1E1 solid;
+	border-width: 1px;
+		height: 44px;
+		width: 100%;
+	}
+	#two #get_Qualifications{
+		height: 45px;
+		color: white;
+		width: 160px;
+		text-align: center;
+		line-height: 45px;
+		background-color: #FF5B1E;
+		border: 0px;
+	}
+#two #get_Qualificationsback{
+		height: 45px;
+		color: white;
+		width: 160px;
+		text-align: center;
+		line-height: 45px;
+		background-color:#E5E5E5;
+		border: 0px;
+	}
+	#two #get_Qualifications:hover{
+		background-color: peachpuff;
+	color: white;
+		}
+	#three{
+				position: relative;
+top: 70px;
+		height:500px;
+	width: 700px;
+	margin: 0 auto;
+	
+	position: relative;
+		
+	}
+	#three .te{
+		position: relative;
+top: 50px;
+		width: 700px;
+		height: 300px;
+		
+		margin: 0 auto;
+		}
+	#three .te ul li{
+		vertical-align:middle; margin-top:2px; margin-bottom:1px;
+		height: 70px;
+		width: 230px;
+		line-height: 70px;
+		float: left;
+		}
+	#three .te ul li.get_backtj1{
+			height: 15px;
+		}
+		#three .te ul li img{
+width: 50%;
+		}
+		#three .te ul li img:hover{
+			opacity: 0.8;
+			}
+	#three .te #get_result{
+		height: 45px;
+		width: 190px;
+		text-align: center;
+		line-height: 45px;
+		background-color: #FF5B1E;
+		color: white !important;
+	     margin-left: 257px;
+		border: 0px;
+			cursor: pointer;
+		}
+			
+#three .te #get_resultback{
+	display: inline-block;
+		height: 45px;
+		width: 190px;
+		text-align: center;
+		line-height: 45px;
+		background-color: #FF5B1E;
+		color: white !important;
+	margin-left: 10px;
+		border: 0px;
+		
+		cursor: pointer;
+		}
+			

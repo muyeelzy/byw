@@ -1,0 +1,498 @@
+
+			@charset "utf-8";
+			body,
+			h1,
+			h2,
+			h3,
+			h4,
+			h5,
+			h6,
+			dl,
+			dt,
+			dd,
+			ul,
+			ol,
+			li,
+			th,
+			td,
+			p,
+			form,
+			button,
+			input,
+			textarea,
+			fieldset,
+			blockquote,
+			img,
+			iframe,
+			pre,
+			code,
+			hr,
+			legend {
+				padding: 0;
+				margin: 0
+			}
+			
+			body {
+				color: #333;
+				font: 12px Arial, Helvetica, sans-serif, Simsun
+			}
+			
+			h1,
+			h2,
+			h3,
+			h4,
+			h5,
+			h6 {
+				font-size: 100%;
+				font-weight: normal
+			}
+			
+			ol,
+			ul {
+				list-style: none
+			}
+			
+			img {
+				border: 0;
+				vertical-align: top
+			}
+			
+			input,
+			select,
+			input,
+			textarea {
+				font-size: 12px;
+				outline: 0
+			}
+			
+			select,
+			input {
+				vertical-align: middle
+			}
+			
+			input[type="reset"]::-moz-focus-inner,
+			input[type="button"]::-moz-focus-inner,
+			input[type="submit"]::-moz-focus-inner,
+			input[type="file"]>input[type="button"]::-moz-focus-inner {
+				border: 0;
+				padding: 0;
+				margin-bottom:
+			}
+			
+			textarea {
+				resize: none
+			}
+			
+			fieldset {
+				border: 0
+			}
+			
+			table {
+				border-collapse: collapse;
+				border-spacing: 0
+			}
+			
+			caption,
+			th {
+				text-align: left
+			}
+			
+			address,
+			cite,
+			code,
+			em,
+			th,
+			i,
+			strong {
+				font-style: normal;
+				font-weight: normal
+			}
+			
+			a {
+				text-decoration: none;
+				outline: 0
+			}
+			
+			a:hover {
+				text-decoration: none
+			}
+			
+			body {
+				font-family: "Microsoft YaHei", "微软雅黑", "Hiragino Sans GB", tahoma, arial, simhei;
+				color: #333
+			}
+			
+			.clearfix:after {
+				content: '.';
+				display: block;
+				height: 0;
+				clear: both;
+				visibility: hidden
+			}
+			
+			.clearfix {
+				*+height: 1%
+			}
+			
+			.triangle-down {
+				width: 0;
+				height: 0;
+				overflow: hidden;
+				display: inline-block;
+				border-left: 4px solid #fff;
+				border-right: 4px solid #fff;
+				border-top: 4px solid #999;
+				border-bottom: 4px solid #fff
+			}
+			
+			
+			
+			
+			.calcontent {
+			height: auto;
+				
+				width:527px;
+				background-color: #f9f9f9;
+				border: 1px solid #dcdcdc;
+				border-bottom-left-radius: 5px;
+				border-bottom-right-radius: 5px
+			}
+			
+			.calcontent .calleft {
+				float: left;
+				height:auto;
+				width: 527px;
+				background-color: #fff;
+				position: relative;
+				border-right: 1px solid #dcdcdc
+			}
+			
+			.calcontent .calleft .item-top {
+				margin-top: 30px
+			}
+			
+			.calcontent .calleft .pop {
+				z-index: 1
+			}
+			
+			.calcontent .calleft .adTop {
+				margin-top: 8px
+			}
+			
+			.calcontent .calleft .across {
+				height: 0;
+				width: 488px;
+				margin: 16px 0 25px 50px;
+				_margin-top: 0;
+				border-bottom: 1px dashed #d9d9d9
+			}
+			.calcontent .calleft #totalCapital{
+				text-indent:-5px !important;
+			}
+			.calcontent .calleft .item-mod {
+				color: #333;
+				padding-left: 142px;
+				height: 40px;
+				font-size: 14px;
+				line-height: 40px
+			}
+			
+			.calcontent .calleft .item-mod .sl {
+				float: left;
+				padding-right: 8px
+			}
+			
+			.calcontent .icon-help {
+				cursor: pointer;
+				margin-right: 10px;
+				vertical-align: -2px;
+				*vertical-align: middle;
+				_margin-top: 13px;
+				_margin-bottom: 13px
+			}
+			
+			.calcontent .calleft .int-radio {
+				width: 12px;
+				height: 12px;
+				margin-left: 32px;
+				margin-right: 4px;
+				vertical-align:text-top;
+			}
+			
+			.calcontent .calleft .r1 {
+				margin-left: 0
+			}
+			
+			.calcontent .calleft .item-mod .warn {
+				display: none;
+				color: #f00;
+				font-size: 14px;
+				padding-left: 12px
+			}
+			
+			.calcontent .calleft .item-mod .item-label {
+				float: left;
+				width: 112px;
+				color: #666;
+				height: 40px;
+				line-height: 40px;
+				font-size: 14px;
+				margin-left: -142px;
+				text-align: right
+			}
+			
+			.calcontent .calleft .item-mod .textbox {
+				top: 4px;
+				height: 32px;
+				width: 270px;
+				float: left;
+				position: relative
+			}
+			
+			.calcontent .calleft .item-mod .textbox input {
+				float: left;
+				width: 244px;
+				height: 30px;
+				line-height: 30px;
+				color: #333;
+				z-index: 2;
+				font-size: 14px;
+				padding: 0 12px;
+				border: 1px solid #e3e3e3;
+				background-color: transparent
+			}
+			
+			.calcontent .calleft .item-mod .textbox em {
+				_filter: alpha(opacity=0);
+				position: absolute;
+				display: block;
+				top: 0;
+				right: 11px;
+				z-index: 1;
+				color: #999;
+				width: 48px;
+				height: 32px;
+				line-height: 32px;
+				font-size: 14px;
+				text-align: right
+			}
+			
+			.calcontent .calleft .item-mod .short {
+				width: 90px
+			}
+			
+			.calcontent .calleft .item-mod .short input {
+				width: 64px;
+				z-index: 1
+			}
+			
+			.calcontent .calleft .item-mod .mid {
+				width: 163px
+			}
+			
+			.calcontent .calleft .item-mod .mid input {
+				width: 137px
+			}
+			
+			.calcontent .calleft .item-mod .selectbox {
+				position: relative;
+				z-index: 1;
+				margin-top: 4px;
+				float: left;
+				width: 270px;
+				height: 32px;
+				line-height: 32px;
+				font-size: 14px;
+				color: #333
+			}
+			
+			.calcontent .calleft .item-mod .sel-time {
+				width: 90px
+			}
+			
+			.calcontent .calleft .item-mod .selectbox select {
+				display: none
+			}
+			
+			.calcontent .calleft .item-mod .sin-text {
+				float: left;
+				padding: 0 9px 0 7px
+			}
+			
+			.calcontent .calleft .item-mod .cr {
+				padding-right: 0
+			}
+			
+			.calcontent .calleft .item-bot {
+				margin-top: 41px;
+				padding-left: 142px
+			}
+			
+			.calcontent .calleft .item-bot .cal-button {
+				display: inline-block;
+				font-size: 16px;
+				color: #fff;
+				width: 150px;
+				height: 40px;
+				line-height: 40px;
+				text-align: center;
+				background-color: #f60;
+				border-radius: 3px
+			}
+			
+			.calcontent .calleft .item-bot .cal-reset {
+				color: #333;
+				font-size: 14px;
+				margin-left: 16px
+			}
+			
+			.calcontent .calleft .icon-tricut {
+				position: absolute;
+				top: 50%;
+				right: -14px;
+				margin-top: -15px
+			}
+			
+			
+	
+			/*css表格*/
+	    .calright {
+				width: 526px;
+		       
+				height:500px;
+			   
+			}
+			
+			.calcontent .calright .resultContent table {
+				width: 527px;
+				font-size: 14px;
+				background: #fff;
+				margin-bottom: 16px;
+				position: relative;
+			height: auto;
+				border-collapse: collapse
+			}
+			
+			.calcontent .calright .resultContent table thead {
+				color: #666
+			}
+			
+			.calcontent .calright .resultContent table tbody {
+				color: #333
+			}
+			
+			.calcontent .calright .resultContent table th,
+			.calcontent .calright .resultContent table td {
+				border: 1px solid #dcdcdc;
+				text-align: center;
+				font-weight: normal;
+				height: 43px;
+				line-height: 43px;
+				background: #fff
+			}
+			
+			.calcontent .calright .resultContent table th {
+				width: 107px;
+				background-color: #f8f8f8
+			}
+			
+			.calcontent .calright .resultContent table th .icon-wedge {
+				zoom: 1;
+				_display: block
+			}
+			
+			.calcontent .calright .resultContent table tbody td {
+				font-size: 16px
+			}
+			
+			.calcontent .calright .resultContent .doublec tbody td {
+				width: 178px
+			}
+			
+			.calcontent .calright .resultContent table tbody td em {
+				color: #f60;
+				padding-right: 4px
+			}
+			
+			.calcontent .calright .resultContent .result-tip {
+				color: #999;
+				font-size: 13px;
+				_margin-top: -14px
+			}
+			
+			.calcontent .calright .resultContent .result-link {
+				color: #06c;
+				display: block;
+				font-size: 14px;
+				margin-top: 16px;
+				_margin-top: 2px
+			}
+			
+			.calcontent .calright .resultContent .result-link em {
+				color: #f60
+			}
+			
+			.icon-arrow {
+				display: block;
+				position: absolute;
+				width: 0;
+				height: 0;
+				right: -15px;
+				_right: -17px;
+				top: 50%;
+				margin-top: -14px;
+				border-left: 15px solid #c9c9c9;
+				border-top: 15px dashed transparent;
+				border-bottom: 15px dashed transparent
+			}
+			
+			.icon-arrow span {
+				display: block;
+				overflow: hidden;
+				position: absolute;
+				height: 0;
+				width: 0;
+				left: -16px;
+				top: -15px;
+				border-left: 15px solid #fff;
+				border-top: 15px dashed transparent;
+				border-bottom: 15px dashed transparent
+			}
+			
+			.advBox {
+				width: 236px;
+				height: 236px;
+				border-radius: 5px;
+				padding: 33px 0 0 33px;
+				border: 1px solid #d8d8d8;
+				background: #fff;
+				overflow: hidden
+			}
+			
+			.advWrap .advBox {
+				float: right
+			}
+			
+			.advWrap .guesslike-content {
+				float: left
+			}
+			
+			.p_crumbs a:link,
+			.p_crumbs a:visited {
+				color: #666
+			}
+			
+			.p_crumbs a:hover {
+				color: #f60;
+				text-decoration: underline
+			}
+			
+			.pre-detail {
+				float: left;
+				margin-right: 9px
+			}
+			
+			.calcontent .calright .default {
+				margin-top: 165px
+			}
+	

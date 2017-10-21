@@ -1,0 +1,321 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset='UTF-8'>
+		<title>按揭贷款计算器</title>
+<link rel="stylesheet" href="css/index.css" />
+		<!--
+        Navcss
+        -->
+		<link rel="stylesheet" href="css/Navhead.css" />
+		<link rel="stylesheet" href="css/dk.css" />
+	</head>
+	<body>
+		
+			<script src="js/ysdhead.js"></script>
+
+		<!--
+        	头部电话 咨询 问答栏结束
+        -->
+
+		<!--
+             logo栏+定位栏 +导航栏
+        -->
+
+		<div id='second'>
+			<div class='muyee_bg1'>
+				<div class='muyee_logo'>
+					<p><img src="img/login2.png" width="250px"  onclick=window.location="muyee_index.html">&nbsp;&nbsp;<img src="img/sx.PNG" height="32px" style="margin-top:18px;">&nbsp;&nbsp;<label style="top: 12px; position: relative; color: #666666;font-size: 18px;">贷款计算器&nbsp;</p>
+					
+				</div>
+				<div id='in_city' style='display: none'></div>
+				<div class='muyee_nav'>
+					<ul>
+						<li class='cur'><a href="muyee_Loanindex.html" style="color: #222222;">贷款</a></li>
+					
+						
+						<li><a href='muyee_Credit_card.html' style='color: #222222'>信用卡</a></li>
+						
+						<li><a href="muyee_Applyloan.html" style="color: #222222;">贷款申请</a></li>
+						
+						
+						<li  onclick=window.location='muyee_About.html'><a>关于我们</a></li>
+						
+
+					</ul>
+				</div>
+			</div>
+		</div>
+		<!--
+        	贷款计算器
+        -->
+           <div id="conjsqbg" style="height: 780px;">
+        	<div id="conjsqbg1">
+		<div id="Consultant">
+		
+ <div id="firstpane" class="menu_list">
+    <p class="menu_head current">房贷计算器</p>
+    <div style="display:block" class=menu_body >
+      <a href="muyee_CalculatorMortgageloans.html" class="font-color">按揭房贷计算器</a>
+      <a href="muyee_CalculatorAccumulationfund.html">公积金贷款计算器</a>
+      <a href="muyee_CalculatorCombinationmortgage.html">组合房贷计算器</a>
+      <a href="muyee_CalculatorProvidentcommercial.html">公积金和商业贷款</a>
+      <a href="muyee_CalculatorBuyfloor.html">购房能力评估计算器</a>
+      <a href="muyee_CalculatorfloorTaxation.html">房屋税费计算器</a>
+      <a href="muyee_Calculatorfloorguarantee.html">房贷担保</a>
+      <a href="muyee_Calculatorpublicfund.html">住房公积金计算器</a>
+    </div>
+    <p class="menu_head">车贷计算器</p>
+    <div style="display:none" class=menu_body >
+      <a href="muyee_CalculatorCarcomprehensive.html">购车综合计算器</a>
+      <a href="muyee_CalculatorCarloan.html">汽车贷款计算器</a>
+    
+    </div>
+    <p class="menu_head">还款计算器</p>
+    <div style="display:none" class=menu_body >
+       <a href="muyee_CalculatorPersonaldebx.html">等额本金还款计算器</a>
+      <a href="muyee_CalculatorPersonaldebj.html">等额本息还款计算器</a>
+      <a href="muyee_CalculatorPersonalajdk.html">按揭贷款计算器</a>
+      <a href="muyee_CalculatorPersonaltqhk.html">提前还款计算器</a>
+        <a href="muyee_CalculatorPersonalzxjdk.html">助学金计算器</a>
+      <a href="muyee_Calculatorfloorguarantee.html">个人贷款计算器</a>
+        <a href="muyee_CalculatorPersonalxfdk.html">消费贷款计算器</a>
+      <a href="muyee_CalculatorPersonalhkbj.html">还款比较计算器</a>
+      
+      
+    </div>
+     <p class="menu_head">个人贷款计算器</p>
+    <div style="display:none" class=menu_body >
+      <a href="muyee_CalculatorPersonaldebj.html">等额本金还款计算器</a>
+      <a href="muyee_CalculatorPersonaldebx.html">等额本息还款计算器</a>
+      <a href="muyee_CalculatorPersonalajdk.html">按揭贷款计算器</a>
+      <a href="muyee_CalculatorPersonaltqhk.html">提前还款计算器</a>
+      <a href="muyee_CalculatorPersonalzxjdk.html">助学金计算器</a>
+      <a href="muyee_CalculatorPersonalgrdk.html">个人贷款计算器</a>
+    <a href="muyee_CalculatorPersonalxfdk.html">消费贷款计算器</a>
+      <a href="muyee_CalculatorPersonalhkbj.html">还款比较计算器</a>
+      
+      
+    </div>
+    <p class="menu_head">存款计算器</p>
+    <div style="display:none" class=menu_body >
+      <a href="muyee_CalculatorDposithqck.html">活期计算器</a>
+      <a href="">定期计算器</a>
+      <a href="muyee_CalculatorDpositzclq.html">整存零取计算器</a>
+      <a href="muyee_CalculatorDpositzczq.html">整存整取计算器</a>
+      <a href="muyee_CalculatorDpositoczq.html">零存整取计算器</a>
+      <a href="zj">最佳组合存款计算器</a>
+      
+      
+    </div>
+    <p class="menu_head">信用卡计算器</p>
+    <div style="display:none" class=menu_body >
+      <a href="muyee_CalculatorCreditCardfqf.html">分期付款计算器</a>
+     
+    </div>
+    <p class="menu_head">其他计算器</p>
+    <div style="display:none" class=menu_body >
+      <a href="muyee_CalculatorForeigncurrencydh.html">外币兑换计算器</a>
+      <a href="muyee_CalculatorForeigncurrencygrsds.html">个人所得税计算器</a>
+      <a href="muyee_CalculatorForeigncurrencyylbx.html">养老保险计算器</a>
+      <a href="muyee_CalculatorForeigncurrencywxyj.html">五金一险计算器</a>
+     
+    </div>
+</div>
+<div class="Mortgage-loans">
+	<p class="Mlfont"><img src="img/g2.PNG">&nbsp;&nbsp;房贷计算器<a class="Mlfont1">2015年10月24日最新商贷利率4.90%，公积金利率3.25%，点击了解详情>></a></p>
+<p><img src="img/hs1.PNG" width="100%" height="4px"></p>
+<div class="mo-left">
+	<div class="calcontent" style="height:540px;">
+				<div class="calleft" id="calleft">
+					<i class="icon-arrow"><span></span></i>
+					<div class="item-mod item-top">
+						<label class="item-label"><i class="icon icon-help" id="repaytype-tips"></i><span>还款方式</span></label>
+						<span><input type="radio" name="repaytype" class="int-radio r1" value="1" checked="true">等额本息</span><span><input type="radio" name="repaytype" class="int-radio" value="2">等额本金</span>
+					</div>
+					<div class="item-mod">
+						<label class="item-label"><span>贷款类别</span></label>
+						<span><input name="loantype" id="loantype1" type="radio" class="int-radio r1" value="1" checked="true">公积金贷</span><span><input type="radio" name="loantype" id="loantype2" class="int-radio" value="2">商业贷款</span><span><input type="radio" name="loantype" id="loantype3" class="int-radio" value="3">组合贷</span>
+					</div>
+					<div class="item-mod" id="calType">
+						<label class="item-label"><span>计算方式</span></label>
+						<span><input type="radio" name="caltype" id="caltype1" class="int-radio r1" value="1" >根据公积金贷款总额</span><span><input type="radio" name="caltype" id="caltype2" class="int-radio" checked="true" value="2">根据按揭比例</span>
+					</div>
+					<div class="item-mod" id="totalCapital">
+						<label class="item-label"><span>贷款总额</span></label>
+						<div class="textbox"><input type="text" value="100"  maxlength="9" name="total-capital"><em>万元</em></div>
+						<span class="warn" style="display: none;">金额必须为数字</span>
+						<span class="warn"></span>
+					</div>
+					<div class="item-mod adTop" id="gjjCapital" style="display:none;">
+						<label class="item-label"><span>贷款金额</span></label>
+						<span class="pre-detail">使用公积金贷款</span>
+						<div class="textbox mid"><input type="text" value="100" maxlength="9" name="gjj-capital"><em>万元</em></div>
+						<span class="warn" style="display: none;">金额必须为数字</span>
+						<span class="warn"></span>
+					</div>
+					<div class="item-mod adTop" id="bizCapital" style="display:none;">
+						<span class="pre-detail">使用商业性贷款</span>
+						<div class="textbox mid"><input type="text" value="100" maxlength="9" name="biz-capital"><em>万元</em></div>
+						<span class="warn" style="display: none;">金额必须为数字</span>
+						<span class="warn"></span>
+					</div>
+					<div class="item-mod adTop pop" id="capitalPercent" style="display:block;">
+						<label class="item-label"><span>首付比例</span></label>
+						<div id="prePay" style="z-index: 1;">
+							<select style="height: 32px;width:270px;border: 1px solid #e3e3e3;font-family:Microsoft YaHei;font-size: 14px;">
+								<option value="0.1">1&nbsp;成</option>
+								<option value="0.2">2&nbsp;成</option>
+								<option value="0.3" selected="selected">3&nbsp;成</option>
+								<option value="0.4">4&nbsp;成</option>
+								<option value="0.5">5&nbsp;成</option>
+								<option value="0.6">6&nbsp;成</option>
+								<option value="0.7">7&nbsp;成</option>
+								<option value="0.8">8&nbsp;成</option>
+								<option value="0.9">9&nbsp;成</option>
+
+							</select>
+						</div><span class="warn"></span>
+					</div>
+					<div class="item-mod adTop pop">
+						<label class="item-label"><span>按揭年数</span></label>
+						<div style="z-index: 1;">
+							<select id="loanTime" style="height: 32px;width:270px;border: 1px solid #e3e3e3;font-family:Microsoft YaHei;font-size: 14px;">
+								<option value="6">6个月（6期）</option>
+								<option value="12">1年（12期）</option>
+								<option value="24">2年（24期）</option>
+								<option value="36">3年（36期）</option>
+								<option value="48">4年（48期）</option>
+								<option value="60">5年（60期）</option>
+								<option value="72">6年（72期）</option>
+								<option value="84">7年（84期）</option>
+								<option value="96">8年（96期）</option>
+								<option value="108">9年（108期）</option>
+								<option value="120">10年（120期）</option>
+								<option value="132">11年（132期）</option>
+								<option value="144">12年（144期）</option>
+								<option value="156">13年（156期）</option>
+								<option value="168">14年（168期）</option>
+								<option value="180">15年（180期）</option>
+								<option value="192">16年（192期）</option>
+								<option value="204">17年（204期）</option>
+								<option value="216">18年（216期）</option>
+								<option value="228">19年（228期）</option>
+								<option value="240" selected="selected">20年（240期）</option>
+								<option value="300">25年（300期）</option>
+								<option value="360">30年（360期）</option>
+
+							</select>
+						</div><span class="warn"></span>
+					</div>
+					<div class="item-mod adTop" id="bizRate" style="display:none;">
+						<label class="item-label"><i class="icon icon-help" id="biz-help"></i><span>商贷利率</span></label>
+						<div class="textbox short"><input type="text" id="bizRateValue" value="5.15" maxlength="9" name="biz-rate"></div>
+						<span>&nbsp;%</span>
+						<span class="warn" style="display: none;">利率必须为数字</span>
+						<span class="warn" style="display: none;">利率必须在0-100%之间</span>
+						<span class="warn" style="display: none;">利率不能为空</span>
+						<span class="warn"></span>
+					</div>
+					<div class="item-mod adTop" id="gjjRate">
+						<label class="item-label"><i class="icon icon-help" id="gjj-help"></i><span>利率</span></label>
+						<div class="textbox short"><input type="text" value="3.25" id="gjjRateValue" maxlength="9" name="gjj-rate"></div>
+						<span>&nbsp;%</span><span class="warn" style="display: none;">利率必须为数字</span>
+						<span class="warn" style="display: none;">利率必须在0-100%之间</span>
+						<span class="warn" style="display: none;">利率不能为空</span>
+						<span class="warn"></span>
+					</div>
+					<div class="item-mod" id="discount">
+						<span><input checked="checked" type="radio"  name="discount"  class="int-radio r1" value="1">基准利率</span>
+						<span style="display:none;"><input type="radio" name="discount" class="int-radio" value="0.85">首套优惠85折</span>
+						<span style="display:none;"><input type="radio" name="discount" class="int-radio" value="0.95">首套优惠95折</span>
+					</div>
+					<div class="item-mod" id="discount-part2">
+						<span><input type="radio" name="discount"  class="int-radio r1" value="1.1">第二套房利率</span>
+					</div>
+					<div class="item-bot" id="clickBtn">
+						<input type="hidden" value="true" id="validateTotalCapital" />
+						<input type="hidden" value="true" id="validateGjjCapital" />
+						<input type="hidden" value="true" id="validateBizCapital" />
+						<input type="hidden" value="true" id="validateGjjRate" />
+						<input type="hidden" value="true" id="validateBizRate" />
+						<a class="cal-button" href="javascript:" id="startCal">开始计算</a>
+						<a class="cal-reset" href="javascript:" id="resetCal">清空重填</a>
+					</div>
+
+				</div>
+				<div class="calright">
+					<div id="caldefault" class="default">
+					
+						<p>要贷款买房？赶紧算算吧！</p>
+					</div>
+
+					<div class="resultContent" id="result-table" style="display:none">
+						<div id="table-wrap">
+
+						</div>
+						<p class="result-tip"><i class="icon icon-help" id="result-help"></i>* 以上结果仅供参考</p>
+					</div>
+				</div>
+
+			</div>
+
+		</div>
+
+		<div style="position: absolute; z-index: 10000; width: 440px; left: 427.5px; top: 268px;display: none" id="gjjRateIntroduction">
+			<div class="tooltip-wrap">
+				<div class="tooltip-arrow arr-bottom" style="right: initial; left: 19px;">
+					<div class="tooltip-arrowbg"></div>
+				</div>
+				<div class="tooltip-msg">根据2015年8月26日最新银行利率：公积金[5年以下：2.75%（包括5年），5年以上：3.25%]；商业贷款[0~1年：4.60%（包括1年），1~5年：5.00%（包括5年），5年以上：5.15%]</div>
+			</div>
+		</div>
+
+		<div style="position: absolute; z-index: 10000; width: 440px; left: 400.5px; top: 165px;display: none" id="repayTypeIntroduction">
+			<div class="tooltip-wrap">
+				<div class="tooltip-arrow arr-top" style="right: initial; left: 19px;">
+					<div class="tooltip-arrowbg"></div>
+				</div>
+				<div class="tooltip-msg"><span style="color:#333">等额本息:</span> 等额本息还款,也称定期付息,即借款人每月按相等的金额偿还贷款本息,其中每月贷款利息按月初剩余贷款本金计算并逐月结清。
+					<br>
+					<span style="color:#333">等额本金:</span> 又称利随本清、等本不等息还款法。贷款人将本金分摊到每个月内,同时付清上一交易日至本次还款日之间的利息。
+				</div>
+			</div>
+		</div>
+
+		
+
+
+<div class="mo-right">
+	<br />
+	<br />
+	
+	<p align="center"><img src="img/erweima.png" width="80%"></p>
+	<p align="center">关注比银网微信公众号</p>
+</div>
+<p><img src="img/hs1.PNG" width="100%" height="4px"></p>
+
+</div>
+
+		</div>
+		<div style="clear: both;"></div></div></div>
+		<script src="js/ydwCityfooter.js"></script>
+	</body>
+<script src="js/jquery.js"></script>
+	<script type=text/javascript>
+$(document).ready(function(){
+	$("#firstpane .menu_body:eq(0)").show();
+	$("#firstpane p.menu_head").click(function(){
+		$(this).addClass("current").next("div.menu_body").slideToggle(300).siblings("div.menu_body").slideUp("slow");
+		$(this).siblings().removeClass("current");
+	});
+	$("#secondpane .menu_body:eq(0)").show();
+	$("#secondpane p.menu_head").mouseover(function(){
+		$(this).addClass("current").next("div.menu_body").slideDown(500).siblings("div.menu_body").slideUp("slow");
+		$(this).siblings().removeClass("current");
+	});
+	
+});
+</script>
+<script src="js/dk.js"></script>
+</html>

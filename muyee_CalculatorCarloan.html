@@ -1,0 +1,334 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset='UTF-8'>
+		<title>住房公积金贷款计算器</title>
+<link rel="stylesheet" href="css/index.css" />
+		<!--
+        Navcss
+        -->
+		<link rel="stylesheet" href="css/Navhead.css" />
+	</head>
+	<body>
+		
+			<script src="js/ysdhead.js"></script>
+
+		<!--
+        	头部电话 咨询 问答栏结束
+        -->
+
+		<!--
+             logo栏+定位栏 +导航栏
+        -->
+
+		<div id='second'>
+			<div class='muyee_bg1'>
+				<div class='muyee_logo'>
+					<p><img src="img/login2.png" width="250px"  onclick=window.location="muyee_index.html">&nbsp;&nbsp;<img src="img/sx.PNG" height="32px" style="margin-top:18px;">&nbsp;&nbsp;<label style="top: 12px; position: relative; color: #666666;font-size: 18px;">贷款计算器&nbsp;</p>
+					
+				</div>
+				<div id='in_city' style='display: none'></div>
+				<div class='muyee_nav'>
+					<ul>
+						<li class='cur'><a href="muyee_Loanindex.html" style="color: #222222;">贷款</a></li>
+					
+						
+						<li><a href='muyee_Credit_card.html' style='color: #222222'>信用卡</a></li>
+						
+						<li><a href="muyee_Applyloan.html" style="color: #222222;">贷款申请</a></li>
+						
+						
+						<li  onclick=window.location='muyee_About.html'><a>关于我们</a></li>
+						
+
+					</ul>
+				</div>
+			</div>
+		</div>
+		<!--
+        	贷款计算器
+        -->
+         <div id="conjsqbg3"  style="height:1500px; width:100%; margin: 0 auto; background:#E0E0E0;margin:10px auto;" >
+        	<div id="conjsqbg2" style="height:1200px; width: 1100px; margin: 0 auto; position: relative; top: 40px; background: white;">
+		<div id="Consultant">
+		
+ <div id="firstpane" class="menu_list">
+    <p class="menu_head current">房贷计算器</p>
+    <div style="display:block" class=menu_body >
+      <a href="muyee_CalculatorMortgageloans.html" >按揭房贷计算器</a>
+      <a href="muyee_CalculatorAccumulationfund.html" >公积金贷款计算器</a>
+      <a href="muyee_CalculatorProvidentcommercial.html">组合房贷计算器</a>
+      <a href="muyee_CalculatorProvidentcommercial.html">公积金和商业贷款</a>
+      <a href="muyee_CalculatorBuyfloor.html">购房能力评估计算器</a>
+      <a href="muyee_CalculatorfloorTaxation.html">房屋税费计算器</a>
+      <a href="muyee_Calculatorfloorguarantee.html">房贷担保</a>
+      <a href="muyee_Calculatorpublicfund.html">住房公积金计算器</a>
+    </div>
+    <p class="menu_head">车贷计算器</p>
+    <div style="display:none" class=menu_body >
+      <a href="muyee_CalculatorCarcomprehensive.html" >购车综合计算器</a>
+      <a href="muyee_CalculatorCarloan.html" class="font-color">汽车贷款计算器</a>
+    
+    </div>
+    <p class="menu_head">还款计算器</p>
+    <div style="display:none" class=menu_body >
+       <a href="muyee_CalculatorPersonaldebx.html">等额本金还款计算器</a>
+      <a href="muyee_CalculatorPersonaldebj.html">等额本息还款计算器</a>
+      <a href="muyee_CalculatorPersonalajdk.html">按揭贷款计算器</a>
+      <a href="muyee_CalculatorPersonaltqhk.html">提前还款计算器</a>
+      <a href="muyee_CalculatorPersonalzxjdk.html">助学金计算器</a>
+      <a href="muyee_CalculatorPersonalgrdk.html">个人贷款计算器</a>
+           <a href="muyee_CalculatorPersonalxfdk.html">消费贷款计算器</a>
+      <a href="muyee_CalculatorPersonalhkbj.html">还款比较计算器</a>
+      
+    </div>
+     <p class="menu_head">存款计算器</p>
+    <div style="display:none" class=menu_body >
+      <a href="muyee_CalculatorDposithqck.html">活期计算器</a>
+      <a href="">定期计算器</a>
+      <a href="muyee_CalculatorDpositzclq.html">整存零取计算器</a>
+      <a href="muyee_CalculatorDpositzczq.html">整存整取计算器</a>
+      <a href="muyee_CalculatorDpositoczq.html">零存整取计算器</a>
+      <a href="zj">最佳组合存款计算器</a>
+      
+      
+    </div>
+    <p class="menu_head">信用卡计算器</p>
+    <div style="display:none" class=menu_body >
+      <a href="muyee_CalculatorCreditCardfqf.html">分期付款计算器</a>
+     
+    </div>
+    <p class="menu_head">其他计算器</p>
+    <div style="display:none" class=menu_body >
+      <a href="muyee_CalculatorForeigncurrencydh.html">外币兑换计算器</a>
+      <a href="muyee_CalculatorForeigncurrencygrsds.html">个人所得税计算器</a>
+      <a href="muyee_CalculatorForeigncurrencyylbx.html">养老保险计算器</a>
+      <a href="muyee_CalculatorForeigncurrencywxyj.html">五金一险计算器</a>
+     
+    </div>
+</div>
+<div class="Mortgage-loans">
+	<p class="Mlfont"><img src="img/g3.PNG">&nbsp;&nbsp;汽车贷款计算器<a class="Mlfont1">2015年10月24日最新商贷利率4.90%，公积金利率3.25%，点击了解详情>></a></p>
+<p><img src="img/hs1.PNG" width="100%" height="4px"></p>
+
+
+<div class="jsq-box">
+  ﻿
+  <div class="jsq-box-r">
+      
+      <!--计算器右侧begin-->
+      <div class="left708">    
+    <div class="hack8"></div>
+    <div class="box" style="border:none;">
+     
+      <div class="con">
+       <div class="hack8"></div>
+<form id="carform" name="carform">
+		<div id="rjs_tool">计算公式：</div>
+<table align="center" class="cBlue" cellspacing="0">
+  <tbody>
+              <tr>
+                <td class="cBlue" style="PADDING-TOP: 2px" align="right" width="144">车辆购置价格：</td>
+                <td width="500" align="left"><input class="form1" size="15" value="100000" name="TextGouzhi1">元</td></tr>
+              <tr align="right">
+                <td height="10"></td>
+              </tr>
+              <tr>
+                <td style="PADDING-TOP: 2px" align="right">车辆购置附加费：</td>
+                <td align="left"><input class="form1" size="15" value="8547" name="TextGouzhi2">元 (车价÷11.7)</td></tr>
+              <tr align="right">
+                <td height="10"></td>
+              </tr>
+              <tr>
+                <td style="PADDING-TOP: 2px" align="right">第三者责任险：</td>
+                <td align="left">
+                <input class="form1" size="15" value="1430" name="TextGouzhi3">元 选择赔偿限额：
+                  <select onclick="javascript:document.carform.TextGouzhi3.value=document.carform.TextGouzhi4.value;" size="1" name="TextGouzhi4"> 
+                    <option value="1150">5万元</option> 
+                    <option value="1430" selected="">10万元</option> 
+                    <option value="1650">20万元</option> 
+                    <option value="1925">50万元</option> 
+                    <option value="2035">100万元</option></select></td></tr>
+              <tr align="right">
+                <td height="10"></td>
+              </tr>
+              <tr>
+                <td style="PADDING-TOP: 2px" align="right">车辆损失险：</td>
+                <td align="left"><input class="form1" size="15" value="1075" name="TextGouzhi5">元 
+                (车价×0.9%+175)</td></tr>
+              <tr align="right">
+                <td height="10"></td>
+              </tr>
+              <tr>
+                <td style="PADDING-TOP: 2px" align="right">不计责任免赔险：</td>
+                <td align="left"><input class="form1" size="15" name="TextGouzhi6">元 
+                (第三责任险+车辆损失险)×20%</td></tr>
+              <tr align="right">
+                <td height="10"></td>
+              </tr>
+              <tr>
+                <td style="PADDING-TOP: 2px" align="right">全车盗抢险：</td>
+                <td align="left"><input class="form1" size="15" value="650" name="TextGouzhi7">元 
+                  选择赔偿限额：<select onclick="javascript:document.carform.TextGouzhi7.value=document.carform.TextGouzhi8.value" size="1" name="TextGouzhi8"> <option value="325">5万元</option> 
+                    <option value="650" selected="">10万元</option> <option value="1300">20万元</option> <option value="3250">50万元</option> 
+                <option value="6500">100万元</option></select> ×0.65% </td></tr>
+              <tr align="right">
+                <td height="10"></td>
+              </tr>
+              <tr>
+                <td style="PADDING-TOP: 2px" align="right">玻璃单独破碎险：</td>
+                <td align="left"><input class="form1" size="15" value="120" name="TextGouzhi9">元 
+                  选择赔偿限额：<select onclick="javascript:document.carform.TextGouzhi9.value=document.carform.TextGouzhi10.value" size="1" name="TextGouzhi10"> <option value="60">5万元</option> 
+                    <option value="120" selected="">10万元</option> <option value="240">20万元</option> <option value="600">50万元</option> 
+                <option value="1200">100万元</option></select>×0.12%</td></tr>
+              <tr align="right">
+                <td height="10"></td>
+              </tr>
+              <tr>
+                <td style="PADDING-TOP: 2px" align="right">其它保险费用：</td>
+                <td align="left"><input class="form1" size="15" value="0" name="TextGouzhi11">元 
+                如还有其它保险费用，客户自行填写。</td></tr>
+              <tr align="right">
+                <td height="10"></td>
+              </tr>
+              <tr>
+                <td style="PADDING-TOP: 2px" align="right">养路费：</td>
+                <td align="left"><input class="form1" size="15" value="120" name="TextGouzhi12">元 
+                轿车120/月；面包车等140/月</td></tr>
+              <tr align="right">
+                <td height="10"></td>
+              </tr>
+              <tr>
+                <td style="PADDING-TOP: 2px" align="right">车船使用费：</td>
+                <td align="left"><input class="form1" size="15" value="100" name="TextGouzhi13">元</td></tr>
+              <tr align="right">
+                <td height="10"></td>
+              </tr>
+              <tr>
+
+                <td style="PADDING-TOP: 2px" align="right">无人道路看护费：</td>
+                <td align="left"><input class="form1" size="15" value="30" name="TextGouzhi14">元 
+                固定</td></tr>
+              <tr align="right">
+                <td height="10"></td>
+              </tr>
+              <tr>
+                <td style="PADDING-TOP: 2px" align="right">照相费：</td>
+                <td align="left"><input class="form1" size="15" value="30" name="TextGouzhi15">元 
+                固定</td></tr>
+              <tr align="right">
+                <td height="10"></td>
+              </tr>
+              <tr>
+                <td style="PADDING-TOP: 2px" align="right">三角牌：</td>
+                <td align="left"><input class="form1" size="15" value="90" name="TextGouzhi16">元</td></tr>
+              <tr align="right">
+                <td height="10"></td>
+              </tr>
+              <tr>
+                <td style="PADDING-TOP: 2px" align="right">灭火器：</td>
+                <td align="left"><input class="form1" size="15" value="130" name="TextGouzhi17">元 
+                </td></tr>
+              <tr align="right">
+                <td height="10"></td>
+              </tr>
+              <tr>
+                <td style="PADDING-TOP: 2px" align="right">牌照费用：</td>
+                <td align="left"><input class="form1" size="15" value="250" name="TextGouzhi18">元 
+                </td></tr>
+              <tr align="right">
+                <td height="10"></td>
+              </tr>
+              <tr>
+                <td style="PADDING-TOP: 2px" align="right">上牌费用：</td>
+                <td align="left"><input class="form1" size="15" value="300" name="TextGouzhi19">元 
+                固定</td></tr>
+              <tr align="right">
+                <td height="10"></td>
+              </tr>
+              <tr>
+                <td style="PADDING-TOP: 2px" align="right">车船使用税：</td>
+                <td align="left"><input class="form1" size="15" value="100" name="TextGouzhi20">元 
+                </td></tr>
+              <tr align="right">
+                <td height="10"></td>
+              </tr>
+              <tr>
+                <td style="PADDING-TOP: 2px" align="right">托盘费：</td>
+                <td align="left"><input class="form1" size="15" value="120" name="TextGouzhi21">元 
+                固定</td></tr>
+              <tr align="right">
+                <td height="10"></td>
+              </tr>
+              <tr>
+                <td style="PADDING-TOP: 2px" align="right">交强险：</td>
+                <td align="left"><input class="form1" size="15" value="1050" name="TextGouzhi24">元 
+                固定</td></tr>
+              <tr align="right">
+                <td height="10"></td>
+              </tr>
+              <tr>
+                <td style="PADDING-TOP: 2px" align="right">其它费用：</td>
+                <td align="left"><input class="form1" size="15" value="0" name="TextGouzhi22">元 
+                如有其它费用，客户自行填写。</td></tr>
+              <tr>
+                <td height="10"></td></tr>
+              <tr>
+                <td></td>
+                <td align="left"><input style="border:none;color:#fff; background:#FF5B1E;  WIDTH:210px;  CURSOR:hand;  HEIGHT:35px" value="计算" onclick="javascript:JiSuan()" type="button" name="B2"> 
+          </td></tr></tbody></table>
+
+	  <div id="result_tool" >
+			<div id="rjgt_tool">计算结果：</div>
+<table align="center" class="cBlue" style="margin:18px 0px 27px" cellspacing="0">
+              <tbody><tr>
+                <td class="cBlue" style="PADDING-TOP: 2px" align="right" width="133">购车费用合计：</td>
+                <td width="200" align="left"><input class="rinput_tool"  readonly="" size="15" value="0" name="TextGouzhi23">
+                  元</td>
+              </tr></tbody></table>
+
+<div class="hack8"></div>
+      </div></form>
+    </div>
+  </div>
+  </div>
+</div>
+</div>
+<!--计算器style end-->
+
+</div>
+
+		</div>
+		<div style="clear: both;"></div></div></div>
+		<script src="js/ydwCityfooter.js"></script>
+	</body>
+<script src="js/jquery.js"></script>
+	<script type=text/javascript>
+$(document).ready(function(){
+	$("#firstpane .menu_body:eq(0)").show();
+	$("#firstpane p.menu_head").click(function(){
+		$(this).addClass("current").next("div.menu_body").slideToggle(300).siblings("div.menu_body").slideUp("slow");
+		$(this).siblings().removeClass("current");
+	});
+	$("#secondpane .menu_body:eq(0)").show();
+	$("#secondpane p.menu_head").mouseover(function(){
+		$(this).addClass("current").next("div.menu_body").slideDown(500).siblings("div.menu_body").slideUp("slow");
+		$(this).siblings().removeClass("current");
+	});
+	
+});
+</script>
+<script language=JavaScript>
+<!--
+function JiSuan(){
+document.carform.TextGouzhi2.value=Math.round(document.carform.TextGouzhi1.value*10/117);
+document.carform.TextGouzhi5.value=Math.round(document.carform.TextGouzhi1.value*0.009+175);
+document.carform.TextGouzhi3.value=document.carform.TextGouzhi4.value;
+document.carform.TextGouzhi6.value=Math.round((document.carform.TextGouzhi3.value*1+document.carform.TextGouzhi5.value*1)*0.2);
+document.carform.TextGouzhi7.value=document.carform.TextGouzhi8.value;
+document.carform.TextGouzhi9.value=document.carform.TextGouzhi10.value;
+document.carform.TextGouzhi23.value=document.carform.TextGouzhi1.value*1+document.carform.TextGouzhi2.value*1+document.carform.TextGouzhi3.value*1+document.carform.TextGouzhi5.value*1+document.carform.TextGouzhi6.value*1+document.carform.TextGouzhi7.value*1+document.carform.TextGouzhi9.value*1+document.carform.TextGouzhi11.value*1+document.carform.TextGouzhi12.value*1+document.carform.TextGouzhi13.value*1+document.carform.TextGouzhi14.value*1+document.carform.TextGouzhi15.value*1+document.carform.TextGouzhi16.value*1+document.carform.TextGouzhi17.value*1+document.carform.TextGouzhi18.value*1+document.carform.TextGouzhi19.value*1+document.carform.TextGouzhi20.value*1+document.carform.TextGouzhi21.value*1+document.carform.TextGouzhi22.value*1+document.carform.TextGouzhi24.value*1
+}
+
+</script>
+</html>

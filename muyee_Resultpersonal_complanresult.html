@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>个人企业申请结果界面</title>
+		<!--
+        Navcss
+        -->
+		<link rel="stylesheet" href="css/Navhead.css" />
+	</head>
+	<body>
+			
+
+		<!--
+        	头部
+        -->
+		<script src="js/ysdhead.js"></script>
+
+
+		<!--
+        	头部电话 咨询 问答栏结束
+        -->
+
+		<!--
+             logo栏+定位栏 +导航栏
+        -->
+
+		<div id='second'>
+			<div class='muyee_bg1'>
+				<div class='muyee_logo'>
+										<p><img src="img/login2.png" width="250px"  onclick=window.location="muyee_index.html">&nbsp;&nbsp;<img src="img/sx.PNG" height="32px" style="margin-top:18px;">&nbsp;&nbsp;<label style="top: 13px; position: relative; color: #666666;font-size: 18px;">申请结果&nbsp;</p>
+
+				</div>
+				<div id='in_city' style='display: none'></div>
+				<div class='muyee_nav'>
+					<ul>
+						<li class='cur'><a href="muyee_Loanindex.html" style="color: #222222;">贷款</a></li>
+					
+						
+						<li><a href='muyee_Credit_card.html' style='color: #222222'>信用卡</a></li>
+						
+						<li><a href="muyee_Applyloan.html" style="color: #222222;">贷款申请</a></li>
+					
+					
+						<li  onclick=window.location='muyee_About.html'><a>关于我们</a></li>
+						
+
+					</ul>
+				</div>
+			</div>
+		</div>
+
+	<script type='text/javascript' src='js/cityTemplate.js'></script>
+	<!--<script type='text/javascript'>
+		var cityA = $('.city_a_le1 a'); //城市
+		var pla = $('#place'); //出发地
+		var dest = $('#destination');
+		// 默认值
+		inCity.width = '345'; //城市选择框  宽
+		inCity.height = 'auto'; //城市选择框  高
+		inCity.id = '#in_city'; //城市选择框  父级ID
+		inCity.Children = '.city_a_le1'; //城市名box
+		// 初始化 城市HTML模板
+		$(inCity.id).prepend(inCity._template.join(''));
+		inCity.Hot(cityA);
+
+		//城市 导航
+		var apay = $('.screen a');
+
+		var placeThis; //当前选择标签
+		apay.click(function(obj) { //城市导航
+			inCity.payment($(this));
+		})
+
+		inCity.place(pla); //当前城市
+		inCity.destination(dest); //选择
+		inCity.cityClick(cityA); //显示赋值城市
+	</script>
+	<script src='js/js.js'></script>-->
+	</body>
+</html>

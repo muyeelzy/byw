@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<script src="js/jquery.js"></script>
+		<link rel="stylesheet" href="css/index.css" />
+		<!--
+        Navcss
+        -->
+		<link rel="stylesheet" href="css/Navhead.css" />
+	</head>
+	<body>
+		<!--
+        	头部
+        -->
+		<script src="js/ysdhead.js"></script>
+
+
+		<!--
+        	头部电话 咨询 问答栏结束
+        -->
+
+		<!--
+             logo栏+定位栏 +导航栏
+        -->
+
+		<div id="second">
+			<div class="muyee_bg1">
+				<div class="muyee_logo">
+										<p><img src="img/login2.png" width="250px"  onclick=window.location="muyee_index.html">&nbsp;&nbsp;<img src="img/sx.PNG" height="32px" style="margin-top:18px;">&nbsp;&nbsp;<label style="top: 13px; position: relative; color: #666666;font-size: 18px;">贷款评估&nbsp;</p>
+					
+				</div>
+				<div id="in_city" style="display: none"></div>
+				<div class="muyee_nav">
+					<ul>
+						<li class="cur"><a href="muyee_index.html">首页</a></li>
+						<li><a href="muyee_Credit_card.html">信用卡</a></li>
+						<li><a href="muyee_Applyloan.html" style="color: #666666;">贷款申请</a></li>
+					
+						
+						<li ><a href="muyee_About.html">关于我们</a></li>
+						
+
+					</ul>
+				</div>
+			</div>
+		</div>
+		
+		
+	<!--	测试能贷多少钱-->
+	<div id="testbg">
+	
+	<div id="testmoney">
+		
+		<p class="testmoney_first">贷款评估<a class="testleft">能贷多少？1分钟评估后您就知道！</a><a class="testright">您是第 <span class="people">data调用后端</span> 位进行贷款评估的用户</a></p>
+		
+		<p><img class="testmoney_img" src="img/hs.png"></p>
+		<!--
+        	圆型边框
+        -->
+        <form name="testflash" id="testflash" >
+		<div class="testmoney_radius">
+			<br />
+				<br />
+			<br />
+			<p align="center"><img src="img/pic.png" width="20%"></p>
+			<br />
+		
+			
+		<p align="center">恭喜评估完成！</p>
+		<p align="center" class="testresult">输入手机号码，我们将以短信方式发送结果给您</p>
+		<!--<p align="center"><input type="text" placeholder="请输入手机号码" id="testphone"></p>-->
+		<p class="bl-form-group">
+               
+                <div class="controls"  align="center">
+                    <input type="text" value="" id="testphone"  class="fn-tinput" placeholder="手机号" required data-rule-mobile="true" data-msg-required="请输入手机号" data-msg-mobile="请输入正确格式" />
+                </div>
+            </p>
+	
+		
+  <p align="center"><input type="submit" value="提交&nbsp;&nbsp;" id="testworknext">&nbsp;&nbsp;&nbsp;<input type="button" value="重新评测&nbsp;&nbsp;" id="testworkback" onclick="window.location='muyee_Testmoneyfirst.html'"></p>
+ 
+  
+		</div>
+		</form>
+	</div>
+	<div style="clear: both;"></div>
+	<!--
+    	作者：offline
+    	时间：2017-10-20
+    	描述：暂时用br解决后缀缺少</div>结尾
+    -->
+	<br />
+	<br />
+	<br />
+	<br />
+	<br />
+		<!--
+    	尾部
+    -->
+     
+    <script src="js/ydwCityfooter.js"></script>
+	</body>
+	<script src="js/jquery.js"></script>
+<!--提交手机号码 后端直接发送验证码-->
+<script src="js/jQuery.Form.js"></script>
+<script src="js/jquery.validate.js"></script>
+<!--select为选择阻止提交-->
+<script>
+$(function(){
+    //jquery.validate
+	$("#testflash").validate({
+		submitHandler: function() {
+			//验证通过后 的js代码写在这里
+		}
+	})
+		
+})
+
+
+//下面是一些常用的验证规则扩展
+
+
+//配置错误提示的节点，默认为label，这里配置成 span （errorElement:'span'）
+$.validator.setDefaults({
+	errorElement:'span'
+});
+
+//配置通用的默认提示语
+$.extend($.validator.messages, {
+	required: '必填',
+   
+});
+//手机验证规则  
+jQuery.validator.addMethod("mobile", function (value, element) {
+    var mobile = /^1[3|4|5|7|8]\d{9}$/;
+	return this.optional(element) || (mobile.test(value));
+}, "手机格式不对");
+</script>
+<!--
+	ajax提交下拉框选择信息
+-->
+<script>
+$('#testworknext').on('click', function() {
+
+    $('#testflash').on('submit', function() {
+   var testphone=$("#testphone").val();//获取select选中的值
+   
+ 
+$.ajax({
+url:'url',//后台请求url，传入值
+type:'post',//使用get请求，如果用post，值写在data里
+data:{testphone:testphone},//option的值传入后台
+dataType:'json',//返回的数据类型，就是后台返回回来的类型，可以是html，或xml
+async:true,//使用异步方式
+success:function(data){//成功后返回值data
+	window.href='muyee_Testmoneyflash.html';
+ }
+         
+        });
+        return false; // 阻止表单自动提交事件
+    
+});
+});
+</script>
+</html>

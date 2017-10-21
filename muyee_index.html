@@ -1,0 +1,1495 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="utf-8" />
+		<title>主页</title>
+		<script src="js/jquery.js"></script>
+<script src="js/jQuery.Form.js"></script>
+
+	</head>
+
+	<body>
+		<!--
+        	头部电话 咨询 问答栏
+        -->
+
+		<div id="first">
+			<div class="muyee_bg">
+				<div class="muyee_left">
+					<p>贷款就上比银网！&nbsp;</p>
+				</div>
+				<div class="muyee_right">
+					<p align="right">
+						<a href="" target="_blank" class="m_c">咨询</a>&nbsp;&nbsp;&nbsp;
+						<a href="" target="_blank" class="m_c">问答</a>&nbsp;&nbsp;&nbsp;
+						<a onclick="ShowDiv('MyDiv','fade')"><img src="img/header_phone.png" style="margin-top: -2px; height: 20px;">&nbsp;手机</a>
+					</p>
+				</div>
+			</div>
+			<div id="MyDiv" class="white_content">
+				<div style=" cursor: default; height: 40px;font-size: 15px; background-color: #EEEEEE; line-height: 40px;" id="move">
+					<span>&nbsp;&nbsp;扫一扫，轻松访问手机网页</span><span style="font-size: 16px; float: right;cursor: pointer;" onclick="CloseDiv('MyDiv','fade')">X&nbsp;</span>
+
+				</div>
+				<img src="img/erweima.png">
+
+			</div>
+		</div>
+
+		<!--
+        	头部电话 咨询 问答栏结束
+        -->
+
+		<!--
+             logo栏+定位栏 +导航栏
+        -->
+
+		<div id="second">
+			<div class="muyee_bg1">
+				<div class="muyee_logo">
+					<p><img src="img/login2.png" width="250px"  onclick=window.location="muyee_index.html">&nbsp;&nbsp;<img src="img/sx.PNG" height="32px" style="margin-top:18px;">&nbsp;&nbsp;<label style="top: 10px; position: relative;">贷款&nbsp;</label><input type="text" placeholder="全国" id="place" name="" style="position: relative;top:10px;"></p>
+				</div>
+				<div id="in_city" style="display: none"></div>
+				<div class="muyee_nav">
+					<ul>
+						<li class="cur" onclick=window.location="muyee_index.html">首页</li>
+						<li onclick=window.location="muyee_Loanindex.html">贷款</li>
+						<li  onclick=window.location="muyee_Credit_card.html">信用卡</li>									
+						<li class="cur_bg" onclick=window.location="muyee_Sinup.html">注册</li>
+						<li class="cur_bg"onclick=window.location="muyee_Login.html">登录</li>
+
+					</ul>
+				</div>
+			</div>
+		</div>
+		<!--
+             logo栏+定位栏 +导航栏结束
+        -->
+		<!--
+          轮播+注册信息
+        -->
+		<div id="muyee_bg2">
+			<div id="banner">
+
+				<div id="banner_bg"></div>
+
+				<!--标题背景-->
+
+				<div id="banner_info">
+
+				</div>
+
+				<!--标题-->
+
+				<ul>
+
+					<li class="on">1</li>
+
+					<li>2</li>
+
+					<li>3</li>
+
+					<li>4</li>
+
+				</ul>
+
+				<div id="banner_list">
+
+					<a href="#" target="_blank"><img src="img/p1.jpg" /></a>
+
+					<a href="#" target="_blank"><img src="img/p2.jpg" /></a>
+
+					<a href="#" target="_blank"><img src="img/p3.jpg" /></a>
+
+					<a href="#" target="_blank"><img src="img/p1.jpg" /></a>
+
+				</div>
+				<!--
+        	选项卡+注册
+        -->
+<br />
+<br />
+<br />
+<br />
+				<div id="tab1">
+					<h3>我要贷款</h3>
+					<div class="tab">
+						<form name="get_muyee_dk" id="get_muyee_dk" action="" method="post">
+						<p class="muyee_line">贷款金额&nbsp;
+							<input type="text" class="muyee_st muee_sta" style="width: 168px;"  id="muyee_st" name="muyee_st" placeholder="请输入贷款金额">
+
+								
+						
+						</p>
+						
+						<p class="muyee_line">贷款期限&nbsp;
+							<select id="issued_sub_key_c" name="issued_sub_key_b" class="muyee_st" onchange="func();" >
+   <option selected=" selected " value="1-3个月">1-3个月</option>
+     <option value="3-6个月">3-6个月</option>
+     <option value="6-9个月">6-9个月</option>
+     <option value="9-20个月">9-20个月</option>
+     <option value="20-30个月">20-30个月</option>
+     <option value="30-40个月">30-40个月</option>
+     <option value="40-50个月">40-50个月</option>
+     <option value="50-60个月">50-60个月</option>
+     
+     
+ </select>
+		</p>
+				<p class="muyee_line">职业身份&nbsp;
+					<select id="issued_sub_key_c " name="issued_sub_key_c " class="muyee_st"  onchange="func();">
+
+								<option selected="selected">不限</option>
+								<option value="上班族">上班族</option>
+								<option value="个体户">个体户</option>
+								<option value="企业主">企业主</option>
+								<option value="无固定职业">无固定职业</option>
+								
+
+							</select>
+						</p>
+						<p class="muyee_line"><input type="submit" value="搜索&nbsp;&nbsp;&nbsp;" class="muyee_tj"></p>
+						</form>
+					</div>
+					<h3>申请贷款</h3>
+					<div class="tab wushi">
+						<form name="get_muyee_sq" id="get_muyee_sq" method="post" action="">
+							<p><label>贷款金额 &nbsp; &nbsp;</label><input type="text" id="muyee_e" name="muyee_e"  placeholder="贷款金额"/></p>
+							<p><label>你的姓氏 &nbsp; &nbsp;</label><input type="text" id="muyee_x" name="muyee_x"  placeholder="你的姓氏"/>&nbsp;女<input type="radio" name="muyee_nv" checked="checked"  class="ra" tag="0"/>&nbsp;男<input type="radio" name="muyee_nan" value="" class="ra" tag="0"/></p>
+							<p><label>联系手机 &nbsp;</label> <input id="mobile"  type="text" name="mobile" value="" id="muyee_number" class="muyee_number" placeholder="输入手机号码"/> <span style="margin-left:5px;color:red" id="accountflag"></span> </p>
+							<p><label>验证码 &nbsp; &nbsp; </label><input type="text" id ="Txtidcode" class ="txtVerification" placeholder="验证码"><span id="idcode"></span>
+<!--<input type="button" id="butn" value="提交"></p>-->
+<p><label>  短信验证码&nbsp;</label><input style="height: 25px;width: 70px;" type="text" name="codelast" id="codelast" placeholder="验证码"> <input id="btnSendCode" type="button" value="验证码&nbsp;&nbsp;" onclick="sendMessage()" class="send"/><span id="jbPhoneTip"></span></p>
+<p><input type="submit" onClick="doCompare();" value="免费贷款"  id="butn"></p>
+						</form>
+					</div>
+					<h3>贷款搜索</h3>
+					<div class="tab wushi">
+						<form name="get_muyee_search" id="get_muyee_search" method="post" action="">
+							<p class="muyee_line">贷款类型&nbsp;
+							<select id="issued_sub_key_c" name="issued_sub_key_d" class="muyee_st" onchange="func();" >
+   
+     <option value="信用贷款" selected="selected">信用贷款</option>
+     <option value="房产贷款">房产贷款</option>
+     <option value="汽车贷款">汽车贷款</option>
+     <option value="企业贷款">企业贷款</option>
+     <option value="应急贷款">应急贷款</option>
+    
+     
+     
+ </select>
+		</p>
+		<p class="muyee_line">贷款用途&nbsp;
+							<select id="issued_sub_key_c" name="issued_sub_key_e" class="muyee_st" onchange="func();" >
+   
+     <option value="创业" selected="selected">创业</option>
+     <option value="购房">购房</option>
+     <option value="买车">买车</option>
+     <option value="经营">经营</option>
+   
+    
+     
+     
+ </select>
+		</p>
+		<p class="muyee_line">贷款期限&nbsp;<input type="text" name="muyee_memonth" id="muyee_memonth" placeholder="3-60个月期限" />
+							
+  	<p class="muyee_line"><input type="submit" name="muyee_sear" id="muyee_sear"></p>
+						</form>
+					</div>
+<!--
+        	选项卡+注册结束
+        -->
+				</div>
+			</div>
+		</div>
+		
+		
+		<!--
+          轮播+注册信息结束
+        -->
+        <div style="clear: both;"></div>
+		<!--
+        	信息流程栏
+        -->
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+        <div id="muyee_bg3">
+        <div class="muyee_message">
+        	<img src="img/message.jpg" width="100%">
+        </div>
+        </div>
+		<!--
+        	信息栏流程结束
+        -->
+        <!--
+        	信息栏目第二层
+        -->
+        <div id="muyee_message_2">
+        	<p><h2 onclick=window.location="muyee_Personalprojectllicence_index.html">个人贷款</h2>&nbsp;&nbsp;<a onclick=window.location="muyee_Personalprojectllicence_index.html"></a>&nbsp;&nbsp;<a onclick=window.location="muyee_Personalprojectllicence_index.html"></a><a style="float: right;" onclick=window.location="muyee_Personalprojectllicence_index.html">了解更多</a></p>
+        	<p><img class="m_img" src="img/hs.png"></p>
+        	
+        	<div class="muyee_message_2_application">
+        		<p align="center" class="m_wz">贷款申请</p>
+        		<form name="get_muyee_sq" id="get_muyee_sq" method="post" action="">
+              <hr style="height:1px;border:none;border-top:1px solid #e9E9E9;" />
+						
+							<p><label>贷款金额 &nbsp; &nbsp;</label><input type="text"  name="muyee_e"  placeholder="贷款金额"/></p>
+							<br />
+							<p><label>你的姓氏 &nbsp; &nbsp;</label><input type="text" class="muyee_x" name="muyee_x"  placeholder="你的姓氏"/>&nbsp;女<input type="radio" name="muyee_nv" tag="0" checked="checked" class="ra"/>&nbsp;男<input type="radio" name="muyee_nan" value="" class="ra"tag="0" /></p>
+							<br />
+							
+							<p><label>联系手机 &nbsp;</label> <input id="mobile1"  type="text" name="mobile" value=""  class="muyee_number" placeholder="输入手机号码"/>  </p>
+							<br />
+							
+							<p><label>验证码 &nbsp; &nbsp; </label><!--<input type="text" id ="Txtidcode1" class="se" placeholder="验证码"/><span id="idcode1"></span>--> <input type="text" class="input" name="yz" /><span id="code" class="nocode">验证码</span></p>
+							<br />
+								
+<!--<input type="button" id="butn" value="提交"></p>-->
+<p><label>  短信验证码&nbsp;</label><input style="height: 25px" type="text" name="codelast" id="codelast1" placeholder="验证码"> <input id="btnSendCode1" type="button" value="验证码&nbsp;&nbsp;" onclick="sendMessage1()" class="send"/><span id="jbPhoneTip1"></span></p>
+							<br />
+<p><input type="submit" onClick="doCompare1();" value="免费贷款"  id="regis" class="check"></p>
+						</form>
+				
+        		
+        	</div>
+        	<div class="muyee_message_2_type">
+<div id="tab">
+	<div class="te">
+	<ul class="tab_menu">
+    	<li class="selected" onclick=window.location="muyee_Personalprojectllicence_index.html">保单贷款</li>
+        <li onclick=window.location="muyee_Personalprojectllicence_index.html">房产贷款</li>
+        <li onclick=window.location="muyee_Personalprojectllicence_index.html">汽车贷款</li>
+        <li onclick=window.location="muyee_Personalprojectllicence_index.html">个税贷款</li>
+        <li onclick=window.location="muyee_Personalprojectllicence_index.html">公积金贷款</li>
+        		
+        
+    </ul>
+    </div>
+    <div class="tab_box">
+        		
+    	
+    	<div>
+    		<div class="t_a">
+    			<img src="img/muyeey.PNG">
+    			<img src="img/muyeek.PNG">
+    			<img src="img/muyeej.PNG">
+    			<img src="img/muyeeh.PNG">
+    			
+    		</div>
+    		<div class="t_b">
+    			<br />
+    			<p align="center" class="muyee_t_b"><a id="xyrs">563859</a><span>&nbsp;人</span></p>
+    			<p align="center" style="color: #999999;">咨询人数</p>
+    			<br>
+    			<p id="muyee_lj" align="center">了解保单贷款</p>
+    		</div>
+        		<div class="muyee_wt">
+        			<div class="wt_l"><div class="img_wt"><img src="img/r1.jpg"></div><div class="wt_w">
+        				  <p>无抵押信用贷款  </p>
+<p>贷款利率：面议</p>
+<p>贷款额度：1-100万 </p>
+ <p>龙姣 &nbsp;<img src="img/n.PNG">  </p>
+
+        			</div></div>
+        			<div class="wt_r">
+        				<p>咨询热线:</p>
+        				<p class="pb">4000-700-130</p>
+        				<a href="muyee_applyloan.html"><img src="img/h.PNG" height="15px">&nbsp;免费申请</a>
+        			</div>
+        			
+        		</div>
+    		
+    	</div>
+        <div class="hide">
+        	<div class="t_a">
+    			<img src="img/muyeey.PNG">
+    			<img src="img/muyeeb.PNG">
+    			<img src="img/muyeek.PNG">
+    			<img src="img/muyeew.PNG">
+    			
+    		</div>
+    		<div class="t_b">
+    			<br />
+    			<p align="center" class="muyee_t_b"><a id="xyrs">25637</a><span>&nbsp;人</span></p>
+    			<p align="center" style="color: #999999;">咨询人数</p>
+    			<br>
+    			<p id="muyee_lj" align="center">了解房产贷款</p>
+    		</div>
+    		<div class="muyee_wt">
+        			<div class="wt_l"><div class="img_wt"><img src="img/r3.jpg"></div><div class="wt_w">
+        				  <p>房屋抵押贷款  </p>
+<p>贷款利率：面议</p>
+<p>贷款额度：100-800万 </p>
+ <p>龙姣 &nbsp;<img src="img/n.PNG">  </p>
+
+        			</div></div>
+        			<div class="wt_r">
+        				<p>咨询热线:</p>
+        				<p class="pb">4000-700-130</p>
+        				<a href="muyee_applyloan.html"><img src="img/h.PNG" height="15px">&nbsp;免费申请</a>
+        			</div>
+        			
+        		</div>
+        </div>
+        <div class="hide">
+        	<div class="t_a">
+    			<img src="img/muyeey.PNG">
+    			<img src="img/muyeew.PNG">
+    			<img src="img/muyeej.PNG">
+    			<img src="img/muyeec.PNG">
+    			
+    		</div>
+    		<div class="t_b">
+    			<br />
+    			<p align="center" class="muyee_t_b"><a id="xyrs">14567</a><span>&nbsp;人</span></p>
+    			<p align="center" style="color: #999999;">咨询人数</p>
+    			<br>
+    			<p id="muyee_lj" align="center">了解汽车贷款</p>
+    		</div>
+    		<div class="muyee_wt">
+        			<div class="wt_l"><div class="img_wt"><img src="img/r3.jpg"></div><div class="wt_w">
+        				  <p>汽车贷款  </p>
+<p>贷款利率：面议</p>
+<p>贷款额度：1-100万 </p>
+ <p>龙姣 &nbsp;<img src="img/n.PNG">  </p>
+
+        			</div></div>
+        			<div class="wt_r">
+        				<p>咨询热线:</p>
+        				<p class="pb">4000-700-130</p>
+        				<a href="muyee_applyloan.html"><img src="img/h.PNG" height="15px">&nbsp;免费申请</a>
+        			</div>
+        			
+        		</div>
+        </div>
+        <div class="hide">
+        	<div class="t_a">
+    			<img src="img/muyeey.PNG">
+    			<img src="img/muyeeh.PNG">
+    			<img src="img/muyeej.PNG">
+    			<img src="img/muyeec.PNG">
+    			
+    		</div>
+    		<div class="t_b">
+    			<br />
+    			<p align="center" class="muyee_t_b"><a id="xyrs">5633</a><span>&nbsp;人</span></p>
+    			<p align="center" style="color: #999999;">咨询人数</p>
+    			<br>
+    			<p id="muyee_lj" align="center">了解个税贷款</p>
+    		</div>
+    		<div class="muyee_wt">
+        			<div class="wt_l"><div class="img_wt"><img src="img/r2.jpg"></div><div class="wt_w">
+        				  <p>个税贷款  </p>
+<p>贷款利率：</p>
+<p>贷款额度：50-500万 </p>
+ <p>丝丝 &nbsp;<img src="img/n.PNG">  </p>
+
+        			</div></div>
+        			<div class="wt_r">
+        				<p>咨询热线:</p>
+        				<p class="pb">4000-700-130</p>
+        				<a href="muyee_applyloan.html"><img src="img/h.PNG" height="15px">&nbsp;免费申请</a>
+        			</div>
+        			
+        		</div>
+        </div>
+        <div class="hide"><div class="t_a">
+    			<img src="img/muyeey.PNG">
+    			<img src="img/muyeew.PNG">
+    			<img src="img/muyeeb.PNG">
+    			<img src="img/muyeec.PNG">
+    			
+    		</div>
+    		<div class="t_b">
+    			<br />
+    			<p align="center" class="muyee_t_b"><a id="xyrs">5866</a><span>&nbsp;人</span></p>
+    			<p align="center" style="color: #999999;">咨询人数</p>
+    			<br>
+    			<p id="muyee_lj" align="center">了解公积金贷款</p>
+    		</div>
+    		<div class="muyee_wt">
+        			<div class="wt_l"><div class="img_wt"><img src="img/r2.jpg"></div><div class="wt_w">
+        				  <p>公积金贷款  </p>
+<p>贷款利率：面议</p>
+<p>贷款额度：30-100万 </p>
+ <p>咪咪 &nbsp;<img src="img/n.PNG">  </p>
+
+        			</div></div>
+        			<div class="wt_r">
+        				<p>咨询热线:</p>
+        				<p class="pb">4000-700-130</p>
+        				<a href="muyee_applyloan.html"><img src="img/h.PNG" height="15px">&nbsp;免费申请</a>
+        			</div>
+        			
+        		</div>
+        </div>
+        <div style="clear: both;"></div>
+        	
+        		
+        
+    </div>
+
+    </div>
+        	</div>
+        	<div class="muyee_message_2_promise">
+        		<img src="img/fw.PNG">
+        		<br />
+        		<br />
+        		<img src="img/jg.PNG">
+        		<br />
+        		<div class="p_l" onclick="window.location='muyee_CalculatorMortgageloans.html'">
+        			<p align="center"><img src="img/js.PNG" onclick="window.location='muyee_CalculatorMortgageloans.html'"></p>
+        			<p align="center"><a href="muyee_CalculatorMortgageloans.html">计算器</a></p>
+        		</div>
+        		<div class="p_r">
+        			<p align="center"><img src="img/wd.PNG"></p>
+        			<p align="center"><a>问答区</a></p>
+        		</div>
+ 
+        	</div>
+        	
+        	
+        </div>
+         <!--
+        	信息栏目第二层结束
+        -->
+        
+        <!--
+        	企业贷款信息栏目第二层
+        -->
+        <div id="muyee_message_2">
+        	<p><h2>企业融资</h2>&nbsp;&nbsp;<a></a>&nbsp;&nbsp;<a></a><a style="float: right;">了解更多</a></p>
+        	<p><img class="m_img" src="img/hs.png"></p>
+        	
+        	<div class="muyee_message_2_application">
+        		<p align="center" class="m_wz">贷款申请</p>
+        		<form name="get_muyee_sq" id="get_muyee_sq" method="post" action="">
+              <hr style="height:1px;border:none;border-top:1px solid #e9E9E9;" />
+						
+							<p><label>贷款金额 &nbsp; &nbsp;</label><input type="text"  name="muyee_qe"  placeholder="贷款金额"/></p>
+							<br />
+							<p><label>你的姓氏 &nbsp; &nbsp;</label><input type="text" class="muyee_x" name="muyee_x"  placeholder="你的姓氏"/>&nbsp;女<input type="radio" name="muyee_nv" tag="0" checked="checked" class="ra"/>&nbsp;男<input type="radio" name="muyee_nan" value="" class="ra"tag="0" /></p>
+							<br />
+							
+							<p><label>联系手机 &nbsp;</label> <input id="mobile1"  type="text" name="mobile" value=""  class="muyee_number" placeholder="输入手机号码"/>  </p>
+							<br />
+							
+							<p><label>验证码 &nbsp; &nbsp; </label><!--<input type="text" id ="Txtidcode1" class="se" placeholder="验证码"/><span id="idcode1"></span>--> <input type="text" class="input" name="yz" /><span id="code1" class="nocode1">验证码</span></p>
+							<br />
+								
+<!--<input type="button" id="butn" value="提交"></p>-->
+<p><label>  短信验证码&nbsp;</label><input style="height: 25px" type="text" name="codelast" id="codelast1" placeholder="验证码"> <input id="btnSendCode1" type="button" value="验证码&nbsp;&nbsp;" onclick="sendMessage1()" class="send"/><span id="jbPhoneTip1"></span></p>
+							<br />
+<p><input type="submit" onClick="doCompare1();" value="免费贷款"  id="regis" class="check"></p>
+						</form>
+				
+        		
+        	</div>
+        	<div class="muyee_message_2_type">
+
+
+<div id="tab05">
+	<h3>执照贷款</h3>
+		<div class="tab">
+			<div class="zall">
+				<div class="img_z"><img src="img/zz.jpg"></div>
+				<div class="wz_z">
+					<ul>
+						<li><img src="img/m.PNG">&nbsp;<a>20—2000万</a>￥</li>
+						<li><img src="img/dt.PNG">&nbsp;<a>中信银行</a></li>
+						<li><img src="img/wl.PNG">&nbsp;<a>www.citicbank.com</a></li>
+						<li><img src="img/bs.PNG">&nbsp;<a>总部位于北京</a></li>
+						
+					</ul>
+				</div>
+				<div class="p_z">
+					<ul>
+<li>1987年成立</li>
+<li>综合评价&nbsp;<img src="img/stars_5.png"></li>
+					</ul>
+				</div>
+				<div style="clear: both;"></div>
+				<div class="sq">
+					<div class="sq_a">
+						<div class="sall">
+							<div class="s1">
+								<p>中信银行</p>
+							</div>
+							<div class="s2">
+								<p>期限&nbsp;:&nbsp;<a  class="s3_a">1-6个月</a></P>
+								<p>放款&nbsp;:&nbsp;<a  class="s3_a">1个工作日</a></P>
+									
+							</div>
+							<div class="s3">
+								<p>额度&nbsp;:&nbsp;<a class="s3_a">20-1200万</a></P>
+								<p>利率&nbsp;:&nbsp;<a class="s3_a">0.35%</a></P>
+							</div>
+							<div class="s4">
+								<p>申请贷款</p>
+							</div>
+							
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	<h3>流水贷款</h3>
+		<div class="tab wushi">
+				<div class="zall">
+				<div class="img_z"><img src="img/gd.jpg"></div>
+				<div class="wz_z">
+					<ul>
+						<li><img src="img/m.PNG">&nbsp;<a>200—2000万</a>￥</li>
+						<li><img src="img/dt.PNG">&nbsp;<a>光大银行</a></li>
+						<li><img src="img/wl.PNG">&nbsp;<a>www.cebbank.com</a></li>
+						<li><img src="img/bs.PNG">&nbsp;<a>总部位于北京</a></li>
+						
+					</ul>
+				</div>
+				<div class="p_z">
+					<ul>
+<li>1992-8月年成立</li>
+<li>综合评价&nbsp;<img src="img/stars_5.png"></li>
+					</ul>
+				</div>
+				<div style="clear: both;"></div>
+				<div class="sq">
+					<div class="sq_a">
+						<div class="sall">
+							<div class="s1">
+								<p>光大银行</p>
+							</div>
+							<div class="s2">
+								<p>期限&nbsp;:&nbsp;<a  class="s3_a">1-6个月</a></P>
+								<p>放款&nbsp;:&nbsp;<a  class="s3_a">1个工作日</a></P>
+									
+							</div>
+							<div class="s3">
+								<p>额度&nbsp;:&nbsp;<a class="s3_a">200-1200万</a></P>
+								<p>利率&nbsp;:&nbsp;<a class="s3_a">0.65%</a></P>
+							</div>
+							<div class="s4">
+								<p>申请贷款</p>
+							</div>
+							
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	<h3>税收贷款</h3>
+		<div class="tab wushi1">
+						<div class="zall">
+				<div class="img_z"><img src="img/pa.jpg"></div>
+				<div class="wz_z">
+					<ul>
+						<li><img src="img/m.PNG">&nbsp;<a>200—5000万</a>￥</li>
+						<li><img src="img/dt.PNG">&nbsp;<a>平安银行</a></li>
+						<li><img src="img/wl.PNG">&nbsp;<a>http://bank.pingan.com/</a></li>
+						<li><img src="img/bs.PNG">&nbsp;<a>总部位于深圳</a></li>
+						
+					</ul>
+				</div>
+				<div class="p_z">
+					<ul>
+<li>1992-12月年成立</li>
+<li>综合评价&nbsp;<img src="img/stars_5.png"></li>
+					</ul>
+				</div>
+				<div style="clear: both;"></div>
+				<div class="sq">
+					<div class="sq_a">
+						<div class="sall">
+							<div class="s1">
+								<p>平安银行</p>
+							</div>
+							<div class="s2">
+								<p>期限&nbsp;:&nbsp;<a  class="s3_a">1-5个月</a></P>
+								<p>放款&nbsp;:&nbsp;<a  class="s3_a">1个工作日</a></P>
+									
+							</div>
+							<div class="s3">
+								<p>额度&nbsp;:&nbsp;<a class="s3_a">200-5000万</a></P>
+								<p>利率&nbsp;:&nbsp;<a class="s3_a">0.65%</a></P>
+							</div>
+							<div class="s4">
+								<p>申请贷款</p>
+							</div>
+							
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	
+	
+</div>
+
+
+    
+        	</div>
+        	<div class="muyee_message_2_promise">
+        		<img src="img/fw.PNG">
+        		<br />
+        	
+        <br />
+        		<img src="img/jg.PNG">
+        		<br />
+        		<div class="p_l" onclick="window.location='muyee_CalculatorMortgageloans.html'">
+        			<p align="center"><img src="img/js.PNG" onclick="window.location='muyee_CalculatorMortgageloans.html'"></p>
+        			<p align="center"><a href="muyee_CalculatorMortgageloans.html">计算器</a></p>
+        		</div>
+        		<div class="p_r">
+        			<p align="center"><img src="img/wd.PNG"></p>
+        			<p align="center"><a>问答区</a></p>
+        		</div>
+        		
+ 
+        	</div>
+        	</div>
+    
+        	
+        	
+       
+         <!--
+        	信息栏目第二层结束
+        -->
+        
+        <!--
+        	信息栏第三层
+        -->
+        <br />
+        <div id="muyee_message_3">
+        	<p><h2>更多精彩</h2></p>
+        	<p><img class="m_img" src="img/hs.png" width="100%"></p>
+        	<div class="information">
+        		<p><span>&nbsp;资讯</span><span style="float: right;"><a>更多&nbsp;</a></span></p>
+              
+        		<p><hr style="height:1px;border:none;border-top:1px solid #e9E9E9;" /></p>
+        		<div class="in_img"><img src="img/in.png" width="100%"></div>
+        		<div class="in_wz"><a><h3>【公告】关于深圳客.....</h3></a>
+        			
+        			<p><a>近期，我司深圳分部连续发生多起客户陷入诈骗的案件</a> </p>
+        			
+        		</div>
+        	
+        		<ul>
+        			<li>贷款总是被拒，快来看看你中了哪一 </li>
+        			<li>不上征信的网贷不还钱的后果？  </li>
+        			<li>重磅！大学生群体再也不能从网贷机 </li>
+        			<li>7旬老太欠款8亿玩失踪 殊不知老  </li>
+        			<li>「新一贷」南京月入5K信用贷，不  </li>
+        		</ul>
+        	</div>
+        	<div class="questions">
+        	
+        		<p><span>&nbsp;资讯</span><span style="float: right;"><a>更多&nbsp;</a></span></p>
+              
+        		<p><hr style="height:1px;border:none;border-top:1px solid #e9E9E9;" /></p>
+        		<input type="text" name="get_in" id="get_in" class="get_in" placeholder="请输入你要搜索内容"/> <input type="submit" value="搜索&nbsp;&nbsp;" id="in_search" /><input type="submit" value="提问&nbsp;&nbsp;" id="in_for" />
+        		<ul>
+        			<li><img src="img/w.PNG">&nbsp;<a>[房屋按揭]重庆按揭贷款什么时候能放款</a></li>
+        			<li><img src="img/d.PNG">&nbsp;<a>商业贷款需要一到两个月放款时间</a><a style="float: right;">详情解答</a></li>
+        		<p><hr style="height:1px;border:none;border-top:1px solid #e9E9E9;" /></p>
+        			<li><img src="img/w.PNG">&nbsp;<a>房屋按揭]成都8月最新房贷利率是多少</a></li>
+        			<li><img src="img/d.PNG">&nbsp;<a>首套房贷利率至少都会上浮5%-10%左右</a><a style="float: right;">详情解答</a></li>
+        		<p><hr style="height:1px;border:none;border-top:1px solid #e9E9E9;" /></p>
+        		<li><img src="img/w.PNG">&nbsp;<a>[企业信用贷款]企业贷款如何申请，想要申请大额借款在哪里能办理</a></li>
+        			<li><img src="img/d.PNG">&nbsp;<a>你好，办理企业贷款很简单，只需要有营业执照和对公对私流水，征信良好就可以申请，大</a><a style="float: right;">详情解答</a></li>
+        		<p><hr style="height:1px;border:none;border-top:1px solid #e9E9E9;" /></p>
+        		</ul>
+        	</div>
+        	<div class="big_img"><img src="img/sss.jpg" width="100%" onclick="window.location='muyee_Testmoneyfirst.html'"></div>
+        </div>
+         <!--
+        	信息栏第三层结束
+        -->
+        <!--
+        	广告栏
+        -->
+        <div id="Advertising">
+        	<div id="tab1">
+	<ul class="tab_menu1">
+    	<li class="selected1">商家合作</li>
+        <li>友情链接</li>
+        <li>联系我们</li>
+         
+    </ul>
+    <p style="top: 25px; position: relative;"> <img src="img/hs.png" width="100%">
+    <div class="tab_box1">
+    	
+    	<div>
+    		
+    		<div class="box">
+  <div class="winBox">
+    <ul class="scroll">
+      <li><a href="#"><img src="img/1jpg.jpg"></a></li>
+      <li><a href="#"><img src="img/2.jpg"></a></li>
+      <li><a href="#"><img src="img/3.jpg"></a></li>
+      <li><a href="#"><img src="img/4.jpg"></a></li>
+      <li><a href="#"><img src="img/5.jpg"></a></li>
+      <li><a href="#"><img src="img/6.jpg"></a></li>
+     
+     
+    </ul>
+  </div>
+</div>
+    	
+    	</div>
+        <div class="hide1">
+        	<p><a target="_blank">民贷天下</a>&nbsp;&nbsp;<a target="_blank">信用卡</a>&nbsp;&nbsp;<a target="_blank">贷款</a></p>
+        </div>
+       <div class="hide1">
+        	<p><a target="_blank">平台服务电话&nbsp;:&nbsp;4000-700-130</a>&nbsp;&nbsp;&nbsp;&nbsp;<a target="_blank">公司总部电话&nbsp;:&nbsp;4000-700-130</a>&nbsp;&nbsp;<a target="_blank">各分支机构电话&nbsp;:&nbsp;4000-700-130</a></p>
+        </div>
+    </div>
+</div>
+        </div>
+        <!--
+        	广告栏结束
+        -->
+        <!--
+        底部
+        -->
+        <div id="muyee_footer">
+        	<div class="m_f">
+        		<div class="m1"><ul><li class="current"><a href="muyee_About.html">关于我们</a></li><li><a href="muyee_About.html">公司介绍</a></li><li><a href="muyee_About.html">公司文化</a></li><li><a href="muyee_About.html">企业文化</a></li><li><a>联系我们</a></li></ul></div>
+        		<div class="m2"><ul><li class="current"><a href="muyee_Friendloan.html">商家合作</a></li><li><a href="muyee_Friendloan.html">中介机构合作</a></li><li><a href="muyee_Friendloan.html">平台合作</a></li></ul></div>
+        		<div class="m3"><ul><li class="current"><a>贷款指南</a></li><li><a>如何办理贷款</a></li><li><a>咨询相关问题</a></li><li><a>贷款主要事项</a></li><li><a>其他问题</a></li></ul></div>
+        		<div class="m4">
+        			<p align="center">扫一扫，关注我们</p>
+        			<p  align="center"><img src="img/qrcodeMap.jpg"></p> 
+        		</div>
+        		
+        		<div class="m5">
+        			<div class="m5_a"><img src="img/header_phone.png"></div>
+        			<div class="m5_b">
+        				<p style="color: #666666;">客服热线（工作时间 8:00-22:00）</p>
+        				<p style="font-size: 27px; color: #999999;">400-890-2180 </p>
+        			</div>
+        			<div style="clear: both;"></div>
+        			<br />
+        			<ul>
+        			<li class="jg">广东省东莞市南城街道莞太路111号民间金融大厦2号楼505</li>
+        		
+        			
+        			<li class="jg">邮政编码：523000</li>
+</ul>
+        			
+        		</div>
+        		<div style="clear: both;"></div>
+        		<div class="m_ft">
+        			<p><img src="img/f1.PNG">&nbsp;<img src="img/f2.PNG">&nbsp;<img src="img/f3.PNG">&nbsp;<img src="img/f4.PNG">&nbsp;<img src="img/f5.PNG"></p>
+        		<br />
+        		<p align="center">经营许可证号:<a href="http://www.miit.gov.cn/" style="color: #666666;">粤ICP备17082633号-1</a>  Powered by biyin 1.0 </p>
+        		</div>
+        	</div>
+        	
+        </div>
+          <!--
+        底部结束
+        -->
+        <!--
+      右侧浮动栏目
+        -->
+   
+        <dl class="piao">
+  <dd><a  target="_blank" id="sbgj"><b id="sbgj">分享有礼</b></a>
+  </dd>
+  <dd><a href="#" id="sharecard">我sai我sai</a></dd>
+  <dd><a href="#" id="byim">比银IM</a></dd>
+  <dd><a class="xs_show_btn" href="#" target="_blank" id="mesai">小白工具</a></dd>
+  <dd><a href="#" id="zmxy">芝麻信用</a></dd>
+  <dd><a href="#" id="zmxy">京东信用</a></dd>
+  
+  <dd><a target="_blank" href="#">和信用</a></dd>
+  <dd><a href="javascript: void(0);" onclick="NewPopup(30)" style="border-bottom:1px solid #dfe1e3" href="muyee_About.html">关于我们</a></dd>
+  <dd class="no_border"><a id="gotop" href="javascript:void(0);"><i class="icon icon_fanhui"></i></a></dd>
+
+        </dl>
+
+  <script type="text/javascript" src="js/bast.js"></script>
+          <!--
+      右侧浮动栏目结束
+        -->
+	</body>
+	
+	<script type="text/javascript" src="js/cityTemplate.js"></script>
+	<script type="text/javascript">
+		var cityA = $(".city_a_le1 a"); //城市
+		var pla = $("#place"); //出发地
+		var dest = $("#destination");
+		// 默认值
+		inCity.width = "345"; //城市选择框  宽
+		inCity.height = "auto"; //城市选择框  高
+		inCity.id = "#in_city"; //城市选择框  父级ID
+		inCity.Children = '.city_a_le1'; //城市名box
+		// 初始化 城市HTML模板
+		$(inCity.id).prepend(inCity._template.join(''));
+		inCity.Hot(cityA);
+
+		//城市 导航
+		var apay = $(".screen a");
+
+		var placeThis; //当前选择标签
+		apay.click(function(obj) { //城市导航
+			inCity.payment($(this));
+		})
+
+		inCity.place(pla); //当前城市
+		inCity.destination(dest); //选择
+		inCity.cityClick(cityA); //显示赋值城市
+	</script>
+	<!--
+    轮播javascript
+    -->
+	<script type="text/javascript">
+		var t = n = 0,
+			count;
+
+		$(document).ready(function() {
+
+			count = $("#banner_list a").length;
+
+			$("#banner_list a:not(:first-child)").hide();
+
+			$("#banner_info").html($("#banner_list a:first-child").find("img").attr('alt'));
+
+			$("#banner_info").click(function() {
+				window.open($("#banner_list a:first-child").attr('href'), "_blank")
+			});
+
+			$("#banner li").click(function() {
+
+				var i = $(this).text() - 1; //获取Li元素内的值，即1，2，3，4
+
+				n = i;
+
+				if(i >= count) return;
+
+				$("#banner_info").html($("#banner_list a").eq(i).find("img").attr('alt'));
+
+				$("#banner_info").unbind().click(function() {
+					window.open($("#banner_list a").eq(i).attr('href'), "_blank")
+				})
+
+				$("#banner_list a").filter(":visible").fadeOut(500).parent().children().eq(i).fadeIn(1000);
+
+				document.getElementById("banner").style.background = "";
+
+				$(this).toggleClass("on");
+
+				$(this).siblings().removeAttr("class");
+
+			});
+
+			t = setInterval("showAuto()", 4000);
+
+			$("#banner").hover(function() {
+				clearInterval(t)
+			}, function() {
+				t = setInterval("showAuto()", 4000);
+			});
+
+		})
+
+		function showAuto()
+
+		{
+
+			n = n >= (count - 1) ? 0 : ++n;
+
+			$("#banner li").eq(n).trigger('click');
+
+		}
+	</script>
+	 <script type="text/javascript">
+        $(document).ready(function () {
+            $('input#muyee_e').gips({'theme': 'yellow', autoHide:true, text:'请输入你的贷款金额' });
+            $('input#muyee_x').gips({'theme': 'yellow', autoHide:true, text:'请输入你的姓氏' });
+            $('input#muyee_number').gips({'theme': 'yellow', autoHide:true, text:'请输入你的手机号码' });
+             $('input.txtVerification').gips({'theme': 'yellow', autoHide:true, text:'请输入验证码' });
+        });
+    </script>
+  <!--  验证码-->
+<script src="js/jquery.idcode.js"></script>
+<script src="js/jquery.idcode_1.js"></script>
+  
+  <script>
+    $.idcode.setCode();   //加载生成验证码方法
+    $("#regis").click(function(){
+        var IsBy = $.idcode.validateCode()  //调用返回值，返回值结果为true或者false
+        if(IsBy){
+            alert("验证码输入正确")
+        }else {
+            alert("请重新输入")
+        }
+    })
+</script>
+  
+ 
+<!--轮播涂层手机验证码-->
+<script type="text/javascript">  
+  
+var InterValObj; //timer变量，控制时间  
+var count = 120; //间隔函数，1秒执行  
+var curCount;//当前剩余秒数  
+  
+
+  
+function sendMessage() {  
+    curCount = count;  
+　　//设置button效果，开始计时  
+     $("#btnSendCode").attr("disabled", "true");  
+     $("#btnSendCode").val("请在" + curCount + "秒内输入验证码");  
+     InterValObj = window.setInterval(SetRemainTime, 1000); //启动计时器，1秒执行一次  
+　　  //向后台发送处理数据  
+     var mobile = document.getElementById("mobile").value;  
+         validatemobile(mobile);//调用上边的方法验证手机号码的正确性  
+             
+       $.ajax({  
+     　　type: "POST", //用POST方式传输     　　  
+     　　url: 'xxx', //目标地址.  
+         dataType: "json", //数据格式:JSON  
+    　　 //data: "dealType=" + dealType +"&uid=" + uid + "&code=" + code,  
+         data: "&a="+mobile,  
+     　　success: function(json){   
+            if(json.msgid==1){//成功的处理  
+                alert(json.html);  
+            }  
+            else if(json.msgid==2){//失败的处理  
+                alert(json.html);  
+            }  
+            else{  
+                alert(json.html);  
+            }  
+         }  
+     });  
+}  
+  
+//timer处理函数  
+function SetRemainTime() {  
+            if (curCount == 0) {                  
+                window.clearInterval(InterValObj);//停止计时器  
+                $("#btnSendCode").removeAttr("disabled");//启用按钮  
+                $("#btnSendCode").val("重新发送");  
+            }  
+            else {  
+                curCount--;  
+                $("#btnSendCode").val("请在" + curCount + "秒内输入验证码");  
+            }  
+        }  
+        
+        
+        function doCompare(){
+
+var codelast = document.getElementById("codelast").value;//获取输入的验证码
+if(codelast == null || codelast == ''){
+alert("验证码不能为空！");
+}else{
+
+$.ajax({
+type: "POST", // 用POST方式传输
+dataType: "text", // 数据格式:JSON
+url: "", // 目标地址
+data: "flag=4&codelast="+codelast,
+success: function (data){ 
+data = parseInt(data, 10);
+if(data == 1){
+  window.location.href='';//验证成功
+                }else if(data == 0){
+$("#jbPhoneTip").html("<font color='red'>×短信验证码不正确请重新输入</font>");
+}else if(data ==2){
+$("#jbPhoneTip").html("<font color='red'>×验证码已失效请重新获取验证码</font>");
+}
+}
+});
+     }
+}
+</script> 
+<!--栏目涂层手机验证码-->
+<script type="text/javascript">  
+  
+var InterValObj; //timer变量，控制时间  
+var count = 120; //间隔函数，1秒执行  
+var curCount;//当前剩余秒数  
+  
+
+  
+function sendMessage1() {  
+    curCount = count;  
+　　//设置button效果，开始计时  
+     $("#btnSendCode1").attr("disabled", "true");  
+     $("#btnSendCode1").val("请在" + curCount + "秒内输入验证码");  
+     InterValObj = window.setInterval(SetRemainTime1, 1000); //启动计时器，1秒执行一次  
+　　  //向后台发送处理数据  
+     var mobile = document.getElementById("mobile1").value;  
+         validatemobile(mobile1);//调用上边的方法验证手机号码的正确性  
+             
+       $.ajax({  
+     　　type: "POST", //用POST方式传输     　　  
+     　　url: 'xxx', //目标地址.  
+         dataType: "json", //数据格式:JSON  
+    　　 //data: "dealType=" + dealType +"&uid=" + uid + "&code=" + code,  
+         data: "&a="+mobile1,  
+     　　success: function(json){   
+            if(json.msgid==1){//成功的处理  
+                alert(json.html);  
+            }  
+            else if(json.msgid==2){//失败的处理  
+                alert(json.html);  
+            }  
+            else{  
+                alert(json.html);  
+            }  
+         }  
+     });  
+}  
+  
+//timer处理函数  
+function SetRemainTime1() {  
+            if (curCount == 0) {                  
+                window.clearInterval(InterValObj);//停止计时器  
+                $("#btnSendCode1").removeAttr("disabled");//启用按钮  
+                $("#btnSendCode1").val("重新发送");  
+            }  
+            else {  
+                curCount--;  
+                $("#btnSendCode1").val("请在" + curCount + "秒内输入验证码");  
+            }  
+        }  
+        
+        
+        function doCompare1(){
+
+var codelast = document.getElementById("codelast1").value;//获取输入的验证码
+if(codelast == null || codelast == ''){
+alert("验证码不能为空！");
+}else{
+
+$.ajax({
+type: "POST", // 用POST方式传输
+dataType: "text", // 数据格式:JSON
+url: "", // 目标地址
+data: "flag=4&codelast1="+codelast1,
+success: function (data){ 
+data = parseInt(data, 10);
+if(data == 1){
+  window.location.href='';//验证成功
+                }else if(data == 0){
+$("#jbPhoneTip1").html("<font color='red'>×短信验证码不正确请重新输入</font>");
+}else if(data ==2){
+$("#jbPhoneTip1").html("<font color='red'>×验证码已失效请重新获取验证码</font>");
+}
+}
+});
+     }
+}
+</script> 
+<!--
+	栏目tab切换
+-->
+<script type="text/javascript">
+$(document).ready(function(){
+	var $tab_li = $('#tab ul li');
+	$tab_li.hover(function(){
+		$(this).addClass('selected').siblings().removeClass('selected');
+		var index = $tab_li.index(this);
+		$('div.tab_box > div').eq(index).show().siblings().hide();
+	});	
+});
+</script>
+<script type="text/javascript">
+$(document).ready(function(){
+	var $tab_li = $('#tab1 ul li');
+	$tab_li.hover(function(){
+		$(this).addClass('selected1').siblings().removeClass('selected1');
+		var index = $tab_li.index(this);
+		$('div.tab_box1 > div').eq(index).show().siblings().hide();
+	});	
+});
+
+/*<!--
+	图片自动滚动
+-->*/
+</script>
+<script>
+$(function() {
+    var num = 0;
+    function goLeft() {
+        //750是根据你给的尺寸，可变的
+        if (num == -750) {
+            num = 0;
+        }
+        num -= 1;
+        $(".scroll").css({
+            left: num
+        })
+    }
+    //设置滚动速度
+    var timer = setInterval(goLeft, 20);
+    //设置鼠标经过时滚动停止
+    $(".box").hover(function() {
+        clearInterval(timer);
+    },
+    function() {
+        timer = setInterval(goLeft, 20);
+    })
+})
+</script>
+<script>
+        $(":radio").click(function () {
+                var r = $(this).attr("name");
+                $(":radio[name=" + r + "]:not(:checked)").attr("tag", 0);
+                if ($(this).attr("tag") == 1) {
+                    $(this).attr("checked", false);
+                    $(this).attr("tag", 0);
+                }
+                else {
+                    $(this).attr("tag",1);
+                }
+            });
+            </script>
+            
+              <script>
+	$(function(){
+
+//刷新验证码
+function changeImg(){
+     $("#code-img").attr('src',function(i,v){
+          return v+'?'+Math.random();
+      });
+}
+
+//点击刷新验证码
+$("#code-img").click(function(){
+          //验证码的更换
+          changeImg();
+    });
+
+//设置错误和正确的样式
+function flagError(account){
+        $('#'+account).removeClass('valid1');
+        $('#'+account+'flag').removeClass('valid2');
+        $('#'+account).addClass('error1');
+        $('#'+account+'flag').addClass('error2');
+}
+function flagValid(account){
+        $('#'+account).removeClass('error1');
+        $('#'+account+'flag').removeClass('error2');
+        $('#'+account).addClass('valid1');
+        $('#'+account+'flag').addClass('valid2');
+}
+
+//验证账户
+//设置状态
+var accountflag=false;
+function checkAccountjs(oo){
+    var patten=/^1(3|4|5|7|8)\d{9/;
+    if(!patten.test(oo.value)){
+        accountflag=false;
+        flagError('mobile1');
+        $('#accountflag').html("账号11位数号码");
+        return false;
+    }else{        
+        //利用Ajax实现用户名查询是否存在
+        $.ajax({
+                            url:checkAccount,
+                            data:{'mobile1':oo.value},
+                            dataType:'json',
+                            type:'post',
+                            success:function(msg){
+                if(!msg){
+                    flagError('mobile1');
+                    $('#accountflag').html("账户已被占用");
+                    return false;
+                }else{
+                    flagValid('mobile1');
+                    $('#accountflag').html('');
+                    accountflag=true;
+                }
+                            }
+                        });
+    }
+}
+
+$('#mobile1').blur(function(){
+        //查询用户名是否合法
+        checkAccountjs(this);
+});
+
+/*//密码验证
+//设置状态
+var passwordflag=false;
+function  checkPassword(oo){
+    var patt = /^\w{6,16}$/;
+        if(!patt.test(oo.value)){
+            flagError('password');
+            $('#passwordflag').html('密码必须为6~16位只包含字母,数字,下划线');
+            return false;
+        }else{
+            flagValid('password');
+            $('#passwordflag').html('');
+            passwordflag=true;
+        }
+        
+}*/
+
+/*//判断密码强度
+function qiangdu(oo){
+        var pwd_letter=$(".pwd-letter span");
+          var modes=0;
+          var pwd=oo.value;
+        if (pwd.length < 6 || pwd.length > 16){
+            pwd_letter.eq(modes).removeClass('power').siblings().removeClass('power');
+            pwd_letter.eq(modes).addClass('chushi').siblings().addClass('chushi');
+        }else{
+        if (/\d/.test(pwd)) modes++; //数字
+        if (/[a-z]/.test(pwd)) modes++; //小写
+        if (/[A-Z_]/.test(pwd)) modes++; //大写
+              pwd_letter.eq(modes-1).removeClass('chushi').siblings().removeClass('power');
+              pwd_letter.eq(modes-1).addClass('power').siblings().addClass('chushi');
+          }
+}
+*/
+
+/*$('#password').keyup(function(){
+        //查询用户名是否合法
+        checkPassword(this);
+        qiangdu(this);
+});
+
+//确认密码一致
+//设置状态
+var repasswordflag=false;
+function checkRepassword(oo){
+    var password = $('#password').val();
+        if(password != oo.value){
+            if(oo.value.length>0){
+            flagError('repassword');
+            $('#repasswordflag').html('两次密码输入不一致');
+            return false;
+            }
+
+        }else{
+            if(oo.value.length>0){
+            flagValid('repassword');
+            $('#repasswordflag').html('');
+            repasswordflag=true;
+            }
+
+        }
+}
+
+$('#repassword').keyup(function(){
+        if (this.value.length < 6 || this.value.length > 16){
+            return false;
+             }
+        checkRepassword(this);
+});*/
+
+// //判断长度
+//  function strlen(str) {
+//         var len = 0;
+//         for (var i = 0; i < str.length; i++) {
+//             var c = str.charCodeAt(i);
+//             //单字节加1 
+//             if ((c >= 0x0001 && c <= 0x007e) || (0xff60 <= c && c <= 0xff9f)) {
+//                 len++;
+//             }
+//             else {
+//                 len += 1;
+//             }
+//         }
+//         return len;
+//     }
+
+//验证昵称
+//设置状态
+/*var unameflag=false;
+function checkUnamejs(oo){
+    var patten=/^[\u4e00-\u9fa5_\w]{3,10}$/;
+    if(!patten.test(oo.value)){
+        unameflag=false;
+        flagError('uname');
+        $('#unameflag').html("昵称必须为3~10位只包含字母,数字,下划线,中文");
+        return false;
+    }else{        
+        //利用Ajax实现用户名查询是否存在
+        $.ajax({
+                            url:checkUname,
+                            data:{'uname':oo.value},
+                            dataType:'json',
+                            type:'post',
+                            success:function(msg){
+                if(!msg){
+                    flagError('uname');
+                    $('#unameflag').html("账户已被占用");
+                    return false;
+                }else{
+                    flagValid('uname');
+                    $('#unameflag').html('');
+                    unameflag=true;
+                }
+                            }
+                        });
+    }
+}
+
+$('#uname').blur(function(){
+        //查询用户名是否合法
+        checkUnamejs(this);
+});
+*/
+//验证码
+//设置状态后端验证
+/*var codeflag=false;
+function checkCode(oo){
+    if(oo.value.length!=4){
+        flagError('code');
+        $('#codeflag').html("验证码格式不对");
+        return false;
+    }
+    if (oo.value.length==4) {
+        $.ajax({
+                            url:checkVerify,
+                            data:{'code':oo.value},
+                            dataType:'json',
+                            type:'post',
+                            success:function(msg){
+                if(!msg){
+                    flagError('code');
+                    $('#codeflag').html("验证码错误,请重新输入");
+                    return false;
+                }else{
+                    flagValid('code');
+                    $('#codeflag').html('');
+                    codeflag=true;
+                }
+                                }
+                        });
+    }
+}
+
+$('#code').keyup(function(){
+        checkCode(this);
+});*/
+
+$('#regis').click(function(){
+    if (accountflag&&passwordflag&&repasswordflag&&unameflag&&codeflag) {
+        return true;
+    }else{
+        checkAccountjs($('#mobile')[0]);
+        checkPassword($('#password')[0]);
+        qiangdu($('#password')[0]);
+        checkRepassword($('#repassword')[0]);
+     /*   checkUnamejs($('#uname')[0]);
+        checkCode($('#code')[0]);*/
+        return accountflag&&passwordflag&&repasswordflag&&unameflag&&codeflag;
+    }
+    return false;
+    
+});
+
+});
+</script>
+<script type="text/javascript">
+
+function Pid(id,tag){
+	if(!tag){
+		return document.getElementById(id);
+		}
+	else{
+		return document.getElementById(id).getElementsByTagName(tag);
+		}
+}
+
+function tab(id,hx,box,iClass,s,pr){
+	var hxs=Pid(id,hx);
+	var boxs=Pid(id,box);
+	if(!iClass){ // 如果不指定class，则：
+		boxsClass=boxs; // 直接使用box作为容器
+	}
+	else{ // 如果指定class，则：
+		var boxsClass = [];
+		for(i=0;i<boxs.length;i++){
+			if(boxs[i].className.match(/\btab\b/)){// 判断容器的class匹配
+				boxsClass.push(boxs[i]);
+			}
+		}
+	}
+	if(!pr){ // 如果不指定预展开容器，则：
+		go_to(0); // 默认展开序列
+		yy();
+	}
+	else {
+		go_to(pr);
+		yy();
+	}
+	function yy(){
+		for(var i=0;i<hxs.length;i++){
+			hxs[i].temp=i;
+			if(!s){// 如果不指定事件，则：
+				s="onmouseover"; // 使用默认事件
+				hxs[i][s]=function(){
+					go_to(this.temp);
+				}
+			}
+			else{
+				hxs[i][s]=function(){
+					go_to(this.temp);
+				}
+			}
+		}
+	}
+	function go_to(pr){
+		for(var i=0;i<hxs.length;i++){
+			if(!hxs[i].tmpClass){
+				hxs[i].tmpClass=hxs[i].className+=" ";
+				boxsClass[i].tmpClass=boxsClass[i].className+=" ";
+			}
+			if(pr==i){
+				hxs[i].className+=" up"; // 展开状态：标题
+				boxsClass[i].className+=" up"; // 展开状态：容器
+			}
+			else {
+				hxs[i].className=hxs[i].tmpClass;
+				boxsClass[i].className=boxsClass[i].tmpClass;
+			}
+		}
+	}
+}
+tab("tab05","h3","div","tab"); 
+//-->
+
+</script>
+<!--
+	根据不同ip调整界面
+-->
+  <!--<script src="http://counter.sina.com.cn/ip" type="text/javascript" ></script>
+<script>
+var sf=ILData[2];
+if(sf.indexOf("广东")>=0){
+window.location.href="muyee_cityindex.html";
+}
+else if(sf.indexOf("")>=0){
+window.location.href="";
+}
+else if(sf.indexOf("")>=0){
+window.location.href="";
+}
+</script> -->
+            
+<script src="js/code.js"></script>
+    <link href="css/gips.css" rel="stylesheet" type="text/css" />
+   
+    <script src="js/gips.js" type="text/javascript"></script>
+	<link rel="stylesheet" href="css/index.css" />
+	<script type="text/javascript" src="js/js.js"></script>
+
+</html>

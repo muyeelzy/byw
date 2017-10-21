@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset='UTF-8'>
+		<title>住房公积金贷款计算器</title>
+<link rel="stylesheet" href="css/index.css" />
+		<!--
+        Navcss
+        -->
+		<link rel="stylesheet" href="css/Navhead.css" />
+	</head>
+	<body>
+		
+			<script src="js/ysdhead.js"></script>
+
+		<!--
+        	头部电话 咨询 问答栏结束
+        -->
+
+		<!--
+             logo栏+定位栏 +导航栏
+        -->
+
+		<div id='second'>
+			<div class='muyee_bg1'>
+				<div class='muyee_logo'>
+					<p><img src="img/login2.png" width="250px"  onclick=window.location="muyee_index.html">&nbsp;&nbsp;<img src="img/sx.PNG" height="32px" style="margin-top:18px;">&nbsp;&nbsp;<label style="top: 12px; position: relative; color: #666666;font-size: 18px;">贷款计算器&nbsp;</p>
+					
+				</div>
+				<div id='in_city' style='display: none'></div>
+				<div class='muyee_nav'>
+					<ul>
+						<li class='cur'><a href="muyee_Loanindex.html" style="color: #222222;">贷款</a></li>
+					
+						
+						<li><a href='muyee_Credit_card.html' style='color: #222222'>信用卡</a></li>
+						
+						<li><a href="muyee_Applyloan.html" style="color: #222222;">贷款申请</a></li>
+					
+					
+						<li  onclick=window.location='muyee_About.html'><a>关于我们</a></li>
+						
+
+					</ul>
+				</div>
+			</div>
+		</div>
+		<!--
+        	贷款计算器
+        -->
+          <div id="conjsqbg" style="height: 750px;">
+        	<div id="conjsqbg1">
+		<div id="Consultant">
+		
+ <div id="firstpane" class="menu_list">
+    <p class="menu_head current">房贷计算器</p>
+    <div style="display:block" class=menu_body >
+      <a href="muyee_CalculatorMortgageloans.html" >按揭房贷计算器</a>
+      <a href="muyee_CalculatorAccumulationfund.html" >公积金贷款计算器</a>
+      <a href="muyee_CalculatorProvidentcommercial.html">组合房贷计算器</a>
+      <a href="muyee_CalculatorProvidentcommercial.html">公积金和商业贷款</a>
+      <a href="muyee_CalculatorBuyfloor.html">购房能力评估计算器</a>
+      <a href="muyee_CalculatorfloorTaxation.html">房屋税费计算器</a>
+      <a href="muyee_Calculatorfloorguarantee.html">房贷担保</a>
+      <a href="muyee_Calculatorpublicfund.html"class="font-color">住房公积金计算器</a>
+    </div>
+    <p class="menu_head">车贷计算器</p>
+    <div style="display:none" class=menu_body >
+      <a href="muyee_CalculatorCarcomprehensive.html">购车综合计算器</a>
+      <a href="muyee_CalculatorCarloan.html">汽车贷款计算器</a>
+    
+    </div>
+    <p class="menu_head">个人贷款计算器</p>
+    <div style="display:none" class=menu_body >
+      <a href="muyee_CalculatorPersonaldebj.html">等额本金还款计算器</a>
+      <a href="muyee_CalculatorPersonaldebx.html">等额本息还款计算器</a>
+      <a href="muyee_CalculatorPersonalajdk.html">按揭贷款计算器</a>
+      <a href="muyee_CalculatorPersonaltqhk.html">提前还款计算器</a>
+      <a href="muyee_CalculatorPersonalzxjdk.html">助学金计算器</a>
+      <a href="muyee_CalculatorPersonalgrdk.html">个人贷款计算器</a>
+    <a href="muyee_CalculatorPersonalxfdk.html">消费贷款计算器</a>
+      <a href="muyee_CalculatorPersonalhkbj.html">还款比较计算器</a>
+      
+      
+    </div>
+    <p class="menu_head">存款计算器</p>
+    <div style="display:none" class=menu_body >
+      <a href="muyee_CalculatorDposithqck.html">活期计算器</a>
+      <a href="">定期计算器</a>
+      <a href="muyee_CalculatorDpositzclq.html">整存零取计算器</a>
+      <a href="muyee_CalculatorDpositzczq.html">整存整取计算器</a>
+      <a href="muyee_CalculatorDpositoczq.html">零存整取计算器</a>
+      <a href="zj">最佳组合存款计算器</a>
+      
+      
+    </div>
+    <p class="menu_head">信用卡计算器</p>
+    <div style="display:none" class=menu_body >
+      <a href="muyee_CalculatorCreditCardfqf.html">分期付款计算器</a>
+     
+    </div>
+    <p class="menu_head">其他计算器</p>
+    <div style="display:none" class=menu_body >
+      <a href="muyee_CalculatorForeigncurrencydh.html">外币兑换计算器</a>
+      <a href="muyee_CalculatorForeigncurrencygrsds.html">个人所得税计算器</a>
+      <a href="muyee_CalculatorForeigncurrencyylbx.html">养老保险计算器</a>
+      <a href="muyee_CalculatorForeigncurrencywxyj.html">五金一险计算器</a>
+     
+    </div>
+</div>
+<div class="Mortgage-loans">
+	<p class="Mlfont"><img src="img/g2.PNG">&nbsp;&nbsp;房贷计算器<a class="Mlfont1">2015年10月24日最新商贷利率4.90%，公积金利率3.25%，点击了解详情>></a></p>
+<p><img src="img/hs1.PNG" width="100%" height="4px"></p>
+<div class="le">
+<table cellSpacing=0 width=564 >
+  <tbody>
+ 
+    <td>
+      <table cellSpacing=0 width="476">
+       
+      <table style="margin: 14px 0px 10px 22px" class="cBlue" cellSpacing=0>
+        <form name=tongYong>
+        <tbody>
+        <tr class="wdq">
+          <td style="PADDING-TOP: 2px" class=cBlue width=154  align=right>您月工资：</TD>
+          <td width=230><input title=您月工资 size=12  name="pingJunGongZi" style="width: 210px; height: 40px;" placeholder="您月工资">元</td></tr>
+        <tr>
+          <td height=10></td></tr>
+        <tr><
+          <td style="PADDING-TOP: 2px" align=right>本市职工上年月平均工资：</td>
+          <td width=230><INPUT title=本市职工上年月平均工资 onchange=GetTongYong()  style="width: 210px; height: 40px;" placeholder="本市职工上年月平均工资" size=12 
+            name=zhiGongGongZi>元</td></tr></form>
+        
+        </tbody></table>
+      <table style="MARGIN: 0px 0px 27px 54px" class=cBlue cellSpacing=0>
+        <form onsubmit="GongJiJin();return false;" name=gongJiJin>
+        <tbody>
+        <tr>
+          <td style="PADDING-TOP: 2px" class=cBlue width=134 
+            align=right>单位缴存比例：</td>
+          <td width=400><input title=单位缴存比例 value=12 size=12 style="width: 210px; height: 40px;" placeholder="单位缴存比例"  name=danWeiBiLi>% 
+          </td></tr>
+        <tr>
+          <td height=10></td></tr>
+        <tr>
+          <td style="PADDING-TOP: 2px" class=cBlue width=134 
+            align=right>个人缴存比例：</td>
+          <td width=400><input title=个人缴存比例 value=12 style="width: 210px; height: 40px;"
+          	 placeholder="个人缴存比例"  size=12 name=geRenBiLi>% 
+          </td></tr>
+        <tr>
+          <td height=10></td></tr>
+        <tr>
+          <td></td>
+          <td><input id="btnreult" value="确定" type=submit></td></td></tbody></table></tr></TR>
+  <tr>
+    <td height=1></td></tr>
+  
+    <td>
+      <table style="MARGIN-LEFT: 48px" cellSpacing=0 width=476>
+        <tbody>
+        <tr>
+          <td style="PADDING-BOTTOM: 7px;color: #FF5B1E" class=cBlue height=39 
+            vAlign=bottom><B>计算结果</B></td></tr>
+        <tr></tr>
+          <td height=1 background=zfgjj_files/service(2).txt 
+          tppabs="//i1.sinaimg.cn/cj/toolsjs/cj_jsq_lj_006.gif"></td></TR></tbody></table>
+      <table style="MARGIN: 18px 0px 27px 20px" class=cBlue cellSpacing=0>
+        <tbody>
+        <tr>
+          <TD style="PADDING-TOP: 2px" class=cBlue width=210 
+            align=right>今年您每月缴存的住房公积金为</TD>
+          <td><input class=result title=结果显示区域，不可编辑 readOnly size=12 
+            name=jiaoCun>元。</td></tr>
+        <tr>
+          <td height=4></td></tr>
+        <tr>
+          <td style="PADDING-TOP: 2px" class=cBlue width=210 
+          align=right>其中单位缴存</td>
+          <td><input class=result title=结果显示区域，不可编辑 readOnly size=12 
+            name=danWeiJiaoCun>元。</td></tr>
+        <tr>
+          <td height=4></TD></tr>
+        <tr>
+          <td style="PADDING-TOP: 2px" class=cBlue width=210 
+          align=right>个人缴存</td>
+          <td><input class=result title=结果显示区域，不可编辑 readOnly size=12 
+            name=geRenJiaoCun>元。</td></tr></tbody></table>
+       </tbody></table></form>
+</div>
+<div class="rig">
+<p align="center"><img src="img/erweima.png" ></p>
+	<p align="center">关注比银网微信公众号</p>
+	
+</div>
+</div>
+
+		</div>
+		
+		</div>
+	
+		
+	
+	
+		
+		</div></div></div>
+	<script src="js/ydwCityfooter.js"></script>
+	</body>
+<script src="js/jquery.js"></script>
+<SCRIPT language=javascript type=text/javascript>
+		<!--
+		function CheckElem(curObj, msg){
+			if(msg==null) msg="";
+			if(curObj.value==''){
+				alert(msg + "不可为空!");
+				curObj.focus();
+				return false;
+			}else if(isNaN(curObj.value)){
+				alert(msg + "必须为数字!");
+				curObj.focus();
+				return false;
+			}else{
+				return true;
+			}
+		}
+
+		function Format(myFloat){
+			return Math.round(myFloat * 100)/100;
+		}
+
+		var pingJunGongZi = 0;
+		var zhiGongGongZi = 0;
+		function GetTongYong(){
+			var genObj = document.forms["tongYong"];
+			pingJunGongZi = parseFloat(genObj.pingJunGongZi.value);
+			zhiGongGongZi = parseFloat(genObj.zhiGongGongZi.value);
+			if (pingJunGongZi < zhiGongGongZi*0.6) pingJunGongZi = zhiGongGongZi*0.6;
+			if (pingJunGongZi > zhiGongGongZi*3) pingJunGongZi = zhiGongGongZi*3;
+		}
+		//-->
+		</SCRIPT>
+		<SCRIPT language=javascript type=text/javascript>
+<!--
+function GongJiJin(){
+	var myObj = document.forms["gongJiJin"];
+
+			if(!CheckElem(document.forms["tongYong"].elements["pingJunGongZi"], "您上年度月平均工资")) return false;
+			if(!CheckElem(document.forms["tongYong"].elements["zhiGongGongZi"], "本市职工上年月平均工资")) return false;
+			if(!CheckElem(myObj.danWeiBiLi, "单位缴存比例")) return false;
+			if(!CheckElem(myObj.geRenBiLi, "个人缴存比例")) return false;
+
+	GetTongYong();
+	myObj.jiaoCun.value = Format(pingJunGongZi * (parseFloat(myObj.danWeiBiLi.value) + parseFloat(myObj.geRenBiLi.value)) / 100);
+	myObj.danWeiJiaoCun.value = Format(pingJunGongZi * parseFloat(myObj.danWeiBiLi.value) / 100);
+	myObj.geRenJiaoCun.value = Format(pingJunGongZi * parseFloat(myObj.geRenBiLi.value) / 100);
+}
+//-->
+</SCRIPT>
+	<script type=text/javascript>
+$(document).ready(function(){
+	$("#firstpane .menu_body:eq(0)").show();
+	$("#firstpane p.menu_head").click(function(){
+		$(this).addClass("current").next("div.menu_body").slideToggle(300).siblings("div.menu_body").slideUp("slow");
+		$(this).siblings().removeClass("current");
+	});
+	$("#secondpane .menu_body:eq(0)").show();
+	$("#secondpane p.menu_head").mouseover(function(){
+		$(this).addClass("current").next("div.menu_body").slideDown(500).siblings("div.menu_body").slideUp("slow");
+		$(this).siblings().removeClass("current");
+	});
+	
+});
+</script>
+
+</html>

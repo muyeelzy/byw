@@ -1,0 +1,358 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset='UTF-8'>
+		<title>购房能力评估计算器</title>
+<link rel="stylesheet" href="css/index.css" />
+		<!--
+        Navcss
+        -->
+		<link rel="stylesheet" href="css/Navhead.css" />
+	</head>
+	<body>
+		
+			<script src="js/ysdhead.js"></script>
+
+		<!--
+        	头部电话 咨询 问答栏结束
+        -->
+
+		<!--
+             logo栏+定位栏 +导航栏
+        -->
+
+		<div id='second'>
+			<div class='muyee_bg1'>
+				<div class='muyee_logo'>
+					<p><img src="img/login2.png" width="250px"  onclick=window.location="muyee_index.html">&nbsp;&nbsp;<img src="img/sx.PNG" height="32px" style="margin-top:18px;">&nbsp;&nbsp;<label style="top: 12px; position: relative; color: #666666;font-size: 18px;">贷款计算器&nbsp;</p>
+					
+				</div>
+				<div id='in_city' style='display: none'></div>
+				<div class='muyee_nav'>
+					<ul>
+						<li class='cur'><a href="muyee_Loanindex.html" style="color: #222222;">贷款</a></li>
+					
+						
+						<li><a href='muyee_Credit_card.html' style='color: #222222'>信用卡</a></li>
+						
+						<li><a href="muyee_Applyloan.html" style="color: #222222;">贷款申请</a></li>
+						
+						
+						<li  onclick=window.location='muyee_About.html'><a>关于我们</a></li>
+						
+
+					</ul>
+				</div>
+			</div>
+		</div>
+		<!--
+        	贷款计算器
+        -->
+         <div id="conjsqbg" style="height: 750px;">
+        	<div id="conjsqbg1">
+		<div id="Consultant">
+		
+ <div id="firstpane" class="menu_list">
+    <p class="menu_head current">房贷计算器</p>
+    <div style="display:block" class=menu_body >
+      <a href="muyee_CalculatorMortgageloans.html">按揭房贷计算器</a>
+      <a href="muyee_CalculatorAccumulationfund.html">公积金贷款计算器</a>
+      <a href="muyee_CalculatorCombinationmortgage.html">组合房贷计算器</a>
+      <a href="muyee_CalculatorProvidentcommercial.html">公积金和商业贷款</a>
+      <a href="muyee_CalculatorBuyfloor.html" " class="font-color">购房能力评估计算器</a>
+      <a href="muyee_CalculatorfloorTaxation.html">房屋税费计算器</a>
+      <a href="muyee_Calculatorfloorguarantee.html">房贷担保</a>
+      <a href="muyee_Calculatorpublicfund.html">住房公积金计算器</a>
+    </div>
+    <p class="menu_head">车贷计算器</p>
+    <div style="display:none" class=menu_body >
+      <a href="muyee_CalculatorCarcomprehensive.html">购车综合计算器</a>
+      <a href="muyee_CalculatorCarloan.html">汽车贷款计算器</a>
+    
+    </div>
+    <p class="menu_head">还款计算器</p>
+    <div style="display:none" class=menu_body >
+      <a href="muyee_CalculatorPersonaldebx.html">等额本金还款计算器</a>
+      <a href="muyee_CalculatorPersonaldebj.html">等额本息还款计算器</a>
+      <a href="muyee_CalculatorPersonalajdk.html">按揭贷款计算器</a>
+      <a href="muyee_CalculatorPersonaltqhk.html">提前还款计算器</a>
+      <a href="muyee_CalculatorPersonalzxjdk.html">助学金计算器</a>
+      <a href="muyee_CalculatorPersonalgrdk.html">个人贷款计算器</a>
+      <a href="muyee_CalculatorPersonalxfdk.html">消费贷款计算器</a>
+      <a href="muyee_CalculatorPersonalhkbj.html">还款比较计算器</a>
+      
+      
+    </div>
+      <p class="menu_head">存款计算器</p>
+    <div style="display:none" class=menu_body >
+      <a href="muyee_CalculatorDposithqck.html">活期计算器</a>
+      <a href="">定期计算器</a>
+      <a href="muyee_CalculatorDpositzclq.html">整存零取计算器</a>
+      <a href="muyee_CalculatorDpositzczq.html">整存整取计算器</a>
+      <a href="muyee_CalculatorDpositoczq.html">零存整取计算器</a>
+      <a href="zj">最佳组合存款计算器</a>
+      
+      
+    </div>
+    <p class="menu_head">信用卡计算器</p>
+    <div style="display:none" class=menu_body >
+      <a href="muyee_CalculatorCreditCardfqf.html">分期付款计算器</a>
+     
+    </div>
+    <p class="menu_head">其他计算器</p>
+    <div style="display:none" class=menu_body >
+      <a href="muyee_CalculatorForeigncurrencydh.html">外币兑换计算器</a>
+      <a href="muyee_CalculatorForeigncurrencygrsds.html">个人所得税计算器</a>
+      <a href="muyee_CalculatorForeigncurrencyylbx.html">养老保险计算器</a>
+      <a href="muyee_CalculatorForeigncurrencywxyj.html">五金一险计算器</a>
+     
+    </div>
+</div>
+<div class="Mortgage-loans">
+	<p class="Mlfont"><img src="img/g2.PNG">&nbsp;&nbsp;房贷计算器<a class="Mlfont1">2015年10月24日最新商贷利率4.90%，公积金利率3.25%，点击了解详情>></a></p>
+<p><img src="img/hs1.PNG" width="100%" height="4px"></p>
+<div class="le">
+<script>
+$(document).ready(function(){
+	var $dl=$(".jsq-box-l dl").eq(4);
+		$dl.find('dd').show();
+		$dl.siblings().find('dd').hide();
+		$dl.find('dd').children('span').eq(4).addClass('cur');		
+	});
+</script>
+<script type="text/javascript" language="javascript">
+//<!CDATA[
+        function g(o) { return document.getElementById(o); }
+        function HoverLi(n) {
+            for (var i = 1; i <= 4; i++) { g('tb_' + i).className = 'normaltab'; g('tbc_0' + i).className = 'undis'; } g('tbc_0' + n).className = 'dis'; g('tb_' + n).className = 'hovertab';
+        }
+//]]>
+    </script>
+    
+    <script type="text/javascript">
+  function go_date(data) {
+    if (data.selectedIndex == 0) return;
+    document.getElementById('detail__').src = data.options[data.selectedIndex].value + '.htm'; 
+  }
+</script>
+
+<div class="jsq-box">
+	
+<script>
+$(document).ready(function(){
+	$(".jsq-box-l dl dt").click(function(){
+		$(this).siblings('dd').slideToggle();
+		$(this).parent().siblings('dl').find('dd').hide();
+		})
+	
+	});
+</script>
+
+  <div class="jsq-box-r">
+     
+      <div>
+
+<script type="text/javascript"> 
+rhb=new Array(440.104,301.103,231.7,190.136,163.753,144.08,129.379,117.991,108.923,101.542,95.425,90.282,85.902,82.133,78.861,75.997,73.473,71.236,69.241,67.455,65.848,64.397,63.082,61.887,60.798,59.802,58.890,58.052,57.282)
+yhz=new Array(1.978,2.9344,3.8699,4.7847,5.6794,6.5544,7.4102,8.2472,9.0657,9.8662,10.6491,11.4148,12.1636,12.8959,13.6121,14.3126,14.9977,15.6677,16.3229,16.9637,17.5904,18.2034,18.8028,19.389,19.9624,20.5231,21.0715,21.6078,22.1323)
+function chk01()
+{
+if (parseFloat(document.myform.rg01.value)<4.7)
+	alert("--您确定是"+parseFloat(document.myform.rg01.value)+"万元?--"+"\n\n"+"那么您目前尚不具备购房能力，"+"\n\n"+"建议积攒积蓄或能筹集更多的资金。")
+if (parseFloat(document.myform.rg01.value)>10000)
+	alert("您确定拥有超过一亿元的购房资金？");
+ 
+}
+function chk02()
+{
+if (parseFloat(document.myform.rg03.value)>parseFloat(document.myform.rg02.value)*0.7)
+	{
+	alert("您预计家庭每月可用于购房支出已超过家庭月收入的70%，"+"\n\n"+"是否确定不会影响您的正常生活消费？"+"\n\n"+"建议在40%（"+parseFloat(document.myform.rg02.value)*0.4+"元）左右")
+	}
+}
+function chk03()
+{
+if (document.myform.rg01.value=="")
+	alert("请填写现可用于购房的资金")
+else
+	if (document.myform.rg02.value=="")
+			alert("请填写现家庭月收入")
+	else	
+		if (document.myform.rg03.value=="")
+			alert("请填写预计家庭每月可用于购房支出")
+	else	
+		if (document.myform.rg06.value=="")
+			alert("请填写您计划购买房屋的面积")
+	else
+		chk04()
+ 
+}
+function chk04()
+{
+    //您可购买的房屋总价=（家庭月收入-家庭月固定支出）×( (（1＋月利率）＾还款月数)－1  )÷［月利率×（1＋月利率）＾还款月数］+持有资金 
+    var month = parseInt(document.myform.rg04.options[document.myform.rg04.selectedIndex].value);
+    var year = parseInt(month/12);
+    var lilu=0.00576;
+    if(year>5)
+    	lilu=0.00594;
+    js00=parseFloat(document.myform.rg01.value);//现持有
+    js01=parseFloat(document.myform.rg02.value);//月收入
+    js02=parseFloat(document.myform.rg03.value);//月支出
+    js03=parseFloat(document.myform.rg06.value);//面积
+    
+    var d1 = js01-js02;
+    var d2 = Math.pow(1 + lilu , month) - 1;
+    var d3= lilu * Math.pow(1+lilu,month)
+    
+    document.myform.rg07.value = Math.round( ((d1 * d2)/d3)+js00 );
+    document.myform.rg08.value = parseFloat(document.myform.rg07.value)/js03;
+ 
+} 
+</script>
+
+<!--中间部分start-->
+<div class="jsp_center">
+
+<!--从这里开始为中间部分-->
+<form name='myform'>
+
+<div class="jsp_center_nub">
+
+<div class="dkjsp_centop">
+
+
+<div class="dkjsp_conee pt1">
+<div class="dkjsp_tleft">现持有资金：</div>
+<div class="dkjsp_inpright">
+<INPUT class="wd02" name="rg01" placeholder="现持有资金">&nbsp;元
+</div>
+</div>
+
+<div class="dkjsp_conee">
+<div class="dkjsp_tleft">家庭月收入：</div>
+<div class="dkjsp_inpright">
+<INPUT class="wd02" name="rg02" placeholder="家庭月收入">&nbsp;元
+</div>
+</div>
+
+<div class="dkjsp_conee">
+<div class="dkjsp_tleft">家庭平均每月固定支出：</div>
+<div class="dkjsp_inpright">
+<INPUT class="wd02" name="rg03" placeholder="家庭平均每月固定支出">&nbsp;元/月
+</div>
+</div>
+
+<div class="dkjsp_conee">
+<div class="dkjsp_tleft">还款年限：</div>
+<div class="dkjsp_inpright pt3">
+<select class="wd01" name='rg04'>
+<option value="24">2年(24期)</option>
+<option value="36">3年(36期)</option>
+<option value="48">4年(48期)</option>
+<option value="60">5年(60期)</option>
+<option value="72">6年(72期)</option>
+<option value="84">7年(84期)</option>
+<option value="96">8年(96期)</option>
+<option value="108">9年(108期)</option>
+<option value="120">10年(120期)</option>
+<option value="180">15年(180期)</option>
+<option value="240">20年(240期)</option>
+<option value="300">25年(300期)</option>
+<option value="360">30年(360期)</option>
+</select>
+</div>
+</div>
+
+<div class="dkjsp_conee">
+<div class="dkjsp_tleft">房屋面积：</div>
+<div class="dkjsp_inpright">
+<INPUT class="wd02" name="rg06" placeholder="房屋面积(m)">&nbsp;平方米
+</div>
+</div>
+
+<div class="dkjsp_conee pt4">
+<div class="jsp_cetpbutma"><INPUT value="开始计算" type="button" onclick='javascript:chk03();'></div>
+<div class="jsp_cetpbutmb"><INPUT value="重新计算" type="reset"></div>
+</div>
+
+</div>
+
+</div>
+
+
+
+<div class="jsp_center_nub1">
+
+<div class="dkjsp_centop1">
+
+<div class="jsp_cpjs"><br><b>计算结果</b></div>
+
+<div class="dkjsp_conee pt1">
+<div class="dkjsp_tleft">您可购买的房屋总价为：</div>
+<div class="dkjsp_inpright1">
+<INPUT class="input01" id='rg07'  name="rg07">&nbsp;元
+</div>
+</div>
+
+<div class="dkjsp_conee">
+<div class="dkjsp_tleft">你可购买的房屋单价为：</div>
+<div class="dkjsp_inpright1">
+<INPUT class="input01" id='rg08' name="rg08">&nbsp;元/平方米
+</div>
+</div>
+
+
+</div>
+
+</div>
+
+</form>
+
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="rig">
+<p align="center"><img src="img/erweima.png" ></p>
+	<p align="center">关注比银网微信公众号</p>
+	
+</div>
+</div>
+
+</div>
+
+
+	
+
+
+
+
+<!--
+	作者：offline
+	时间：2017-10-17
+	描述：right 二维码
+-->
+
+		</div>
+		<div style="clear: both;"></div></div></div>
+		<script src="js/ydwCityfooter.js"></script>
+	</body>
+<script src="js/jquery.js"></script>
+	<script type=text/javascript>
+$(document).ready(function(){
+	$("#firstpane .menu_body:eq(0)").show();
+	$("#firstpane p.menu_head").click(function(){
+		$(this).addClass("current").next("div.menu_body").slideToggle(300).siblings("div.menu_body").slideUp("slow");
+		$(this).siblings().removeClass("current");
+	});
+	$("#secondpane .menu_body:eq(0)").show();
+	$("#secondpane p.menu_head").mouseover(function(){
+		$(this).addClass("current").next("div.menu_body").slideDown(500).siblings("div.menu_body").slideUp("slow");
+		$(this).siblings().removeClass("current");
+	});
+	
+});
+</script>
+
+</html>

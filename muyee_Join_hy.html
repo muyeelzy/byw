@@ -1,0 +1,242 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="renderer" content="webkit|ie-comp|ie-stand">
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+<title>比银网会员充值</title>
+<!--
+        Navcss
+        -->
+		<link rel="stylesheet" href="css/Navhead.css" />
+<link rel="stylesheet" type="text/css" href="css/muyee_hy.css">
+
+<!--js区域-->
+<script type="text/javascript" src="js/jquery.js"></script>
+<script src="js/jQuery.Form.js"></script>
+<script type="text/javascript">
+$(document).ready(function(e) {
+    $(".fwmc_xxk li").click(function(){
+		//var fw_price = $(this).children("i").text();
+		//var fw_numb = $(".srkk").val();
+		//var fw_tal = fw_price*fw_numb;
+		//$(".zwfb_zje span").text(fw_tal);
+		$(this).addClass("on").siblings().removeClass("on");
+		tola();
+		});
+	//加
+	$(".jia").click(function(){
+		var fw_numb = $(".srkk").val();	
+		fw_numb++;
+		$(".srkk").val(fw_numb);		
+		/*$(".fwmc_xxk li").each(function() {
+            if($(this).hasClass("on")){
+				var dqzt_price = $(this).children("i").text();
+				//alert(dqzt_price);
+				var zgsj_jia = dqzt_price*fw_numb;
+				$(".zwfb_zje span").text(zgsj_jia);
+				}
+        }); */
+		tola();
+		})
+		
+	//减
+	$(".jian").click(function(){
+		var fw_numb = $(".srkk").val();	
+		if(fw_numb <= 1){
+			alert("不能低于0，请住手了哈！")
+			}else{
+		fw_numb--;
+		$(".srkk").val(fw_numb);		
+			}
+		/*$(".fwmc_xxk li").each(function() {
+            if($(this).hasClass("on")){
+				var dqzt_price = $(this).children("i").text();
+				//alert(dqzt_price);
+				var zgsj_jia = dqzt_price*fw_numb;
+				$(".zwfb_zje span").text(zgsj_jia);
+				}
+        }); */
+		tola();
+		})	
+	 
+	
+});
+
+function tola(){
+		var $li = $(".fwmc_xxk").children("li.on");
+		var money = $li.children("i").text();
+		var count = $(".srkk").val();
+		$(".zwfb_zje span").text(money*count);
+}
+
+</script>
+
+<script >
+/*会员购买表单提交*/
+     $('#ac').on('click', function() {
+
+    $('#hy').on('submit', function() {
+    	
+        var jg1 = $('inpur[name=jg1]').val(),
+        hynumber = $('inpur[name=hynumebr]').val(),
+       hyjg = $('#hyjg').text();
+      
+       
+     
+       /* 遍历span
+        * var str = "";//定义div里所有span的值组成的字符串
+var spans = new Array();//定义一个数组，用来存放每一个span的值*/
+/*$(".bzzx_bt span").each(function(i, obj){
+    spans[i] = $(this).text();
+});//循环取出span的值放入数组中
+str = spans.join(",");将数组中的值用逗号连接起来*/
+   
+
+        $(this).ajaxSubmit({
+            type: 'post', // 提交方式 get/post
+            url: 'xx', // 需要提交的 url
+            data: {
+                'jg1': jg1,
+                'hynumber':hynumber,
+               'hyjg':hyjg
+                
+            },
+            success: function(data) { // data 保存提交后返回的数据，一般为 json 数据
+                // 此处可对 data 作相关处理
+                alert('充值成功！');
+                Window.href="muyee_cityinedx.html";
+            }
+          /*  $('regis').resetForm(); // 提交后重置表单*/
+        });
+        return false; // 阻止表单自动提交事件
+    
+});
+});
+</script>
+</head>
+	
+	<body style="background: white;">
+		<!--
+        头部开始
+        -->
+		
+			<script src="js/ysdhead.js"></script>
+
+		<!--
+        	头部电话 咨询 问答栏结束
+        -->
+
+		<!--
+             logo栏+定位栏 +导航栏
+        -->
+
+		<div id='second'>
+			<div class='muyee_bg1'>
+				<div class='muyee_logo'>
+					<p><img src="img/login2.png" width="250px"  onclick=window.location="muyee_index.html">&nbsp;&nbsp;<img src="img/sx.PNG" height="32px" style="margin-top:18px;">&nbsp;&nbsp;<label style="top: 12px; position: relative; color: #666666;font-size: 18px;">贷款计算器&nbsp;</p>
+					
+				</div>
+				<div id='in_city' style='display: none'></div>
+				<div class='muyee_nav'>
+					<ul>
+						<li class='cur'><a>首页</a></li>
+					
+						
+						<li><a href='muyee_Loanindex.html' style='color: #222222'>贷款</a></li>
+						
+						<li><a href="muyee_Applyloan.html" style="color: #222222;">贷款申请</a></li>
+						
+						
+						<li  onclick=window.location='muyee_About.html'><a>关于我们</a></li>
+						
+
+					</ul>
+				</div>
+			</div>
+		</div>
+		
+		
+		
+<!--
+ 充值页面
+-->
+<div id="czbg">
+<div class="w_1200 fw_box ">
+  
+  <div  class="fw_conent"> 
+    <!--内容开始------------------------------>
+    <div class="bzzx_bt"> <strong>会员充值</strong>企业/个人会员充值，<span>更新推送下款子产品、企业产品</span>等管理</div>
+    <form name="hy" id="hy" class="hy" action=""> 
+    <table width="100%" border="0" cellspacing="0" cellpadding="0" class="zwfb_shop_table">
+      <tr valign="top">
+        <td align="right" width="70" style="position: relative; top:-70px">服务名称：</td>
+        <td><ul class="fwmc_xxk">
+            <li class="on">
+              <p>比银网会员</p>
+              <i id="jg1">99</i>元</li>
+          
+          </ul></td>
+      </tr>
+      <tr>
+        <td align="right">会员：</td>
+        <td><div class=" zwsl_num">1个<span>会员数量</span></div> </td>
+      </tr>
+      <tr>
+        <td height="20"></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td align="right">购买月数：</td>
+        <td><ul class="nmb_jj">
+            <li class="jian">-</li>
+            <li>
+              <input name="hynumber" type="text" value="1" class="srkk" />
+            </li>
+            <li class="jia">+</li>  
+          </ul></td>
+      </tr>
+      <tr>
+        <td height="20"></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td align="right">价格：</td>
+        <td><div class="zwfb_zje"><span id="spjg">99</span> <i>元</i></div></td>
+      </tr>
+      <tr>
+        <td height="20"></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td></td>
+        <td><a class="ty_but ml20" href="#" id="ac">购 买</a></td>
+      </tr>
+    </table>
+    </form>
+    <div class="gmxz_tip"> 购买须知：
+      <p>1.会员服务购买后有效期为自购买之日起24个月，过期将会自动作废。</p>
+      <p> 2.本次服务购买后即生效，不支持退费服务。</p>
+    </div>
+    
+ 
+  </div>
+</div>
+<div style="clear: both;"></div>
+	<!--
+    	作者：offline
+    	时间：2017-10-20
+    	描述：暂时用br解决后缀缺少</div>结尾
+    -->
+	<br />
+	<br />
+	<br />
+	<br />
+	
+	<br />
+	
+<script src="js/ydwCityfooter.js"></script>
+
+</body>
+</html>
+
