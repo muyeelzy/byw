@@ -95,6 +95,24 @@
 		<td class="trq">Sai奖励</td>
 		
 	</tr>
+	<tr class="tqnr" id="tqnrtwo">
+		<td class="trq" id="trqname">13727377517</td>
+		<td class="trq" id="tqrtime">2017-10-26</td>
+		<td class="trq" id="tqrnr">Sai平安保单贷</td>
+		<td class="trq" id="tqrjl">10元</td>
+		
+	</tr>
+	<!--
+    	组装数据
+    -->
+	<tr class="tqnr" id="tqnrthree">
+		<td class="trq" id="trqname"></td>
+		<td class="trq" id="tqrtime"></td>
+		<td class="trq" id="tqrnr"></td>
+		<td class="trq" id="tqrjl"></td>
+		
+	</tr>
+	
 	</table>
 </div>
 
@@ -137,108 +155,129 @@
 	</div>
 		<script src="js/jquery.js"></script>
 		<script src="js/jQuery.Form.js"></script>
-<link rel="stylesheet" type="text/css" href="css/muyee_hy.css">
+		<!--
+        无刷新更新数据
+        -->
+        
+        <script>
+        	setTimeout(function() {
+             Push();
+           },
+        200);
+      /*30轮询读取函数*/
+        setInterval(function() {
 
+            Push();
 
-<script type="text/javascript">
-$(document).ready(function(e) {
-    $(".fwmc_xxk li").click(function(){
-		//var fw_price = $(this).children("i").text();
-		//var fw_numb = $(".srkk").val();
-		//var fw_tal = fw_price*fw_numb;
-		//$(".zwfb_zje span").text(fw_tal);
-		$(this).addClass("on").siblings().removeClass("on");
-		tola();
-		});
-	//加
-	$(".jia").click(function(){
-		var fw_numb = $(".srkk").val();	
-		fw_numb++;
-		$(".srkk").val(fw_numb);		
-		/*$(".fwmc_xxk li").each(function() {
-            if($(this).hasClass("on")){
-				var dqzt_price = $(this).children("i").text();
-				//alert(dqzt_price);
-				var zgsj_jia = dqzt_price*fw_numb;
-				$(".zwfb_zje span").text(zgsj_jia);
-				}
-        }); */
-		tola();
-		})
-		
-	//减
-	$(".jian").click(function(){
-		var fw_numb = $(".srkk").val();	
-		if(fw_numb <= 1){
-			alert("不能低于0，请住手了哈！")
-			}else{
-		fw_numb--;
-		$(".srkk").val(fw_numb);		
-			}
-		/*$(".fwmc_xxk li").each(function() {
-            if($(this).hasClass("on")){
-				var dqzt_price = $(this).children("i").text();
-				//alert(dqzt_price);
-				var zgsj_jia = dqzt_price*fw_numb;
-				$(".zwfb_zje span").text(zgsj_jia);
-				}
-        }); */
-		tola();
-		})	
-	 
-	
-});
-
-function tola(){
-		var $li = $(".fwmc_xxk").children("li.on");
-		var money = $li.children("i").text();
-		var count = $(".srkk").val();
-		$(".zwfb_zje span").text(money*count);
-}
-
-</script>
-
-<script >
-/*会员购买表单提交*/
-     $('#ac').on('click', function() {
-
-    $('#hy').on('submit', function() {
-    	
-        var jg1 = $('inpur[name=jg1]').val(),
-        hynumber = $('inpur[name=hynumebr]').val(),
-       hyjg = $('#hyjg').text();
-      
-       
-     
-       /* 遍历span
-        * var str = "";//定义div里所有span的值组成的字符串
-var spans = new Array();//定义一个数组，用来存放每一个span的值*/
-/*$(".bzzx_bt span").each(function(i, obj){
-    spans[i] = $(this).text();
-});//循环取出span的值放入数组中
-str = spans.join(",");将数组中的值用逗号连接起来*/
-   
-
-        $(this).ajaxSubmit({
-            type: 'post', // 提交方式 get/post
-            url: 'xx', // 需要提交的 url
-            data: {
-                'jg1': jg1,
-                'hynumber':hynumber,
-               'hyjg':hyjg
-                
-            },
-            success: function(data) { // data 保存提交后返回的数据，一般为 json 数据
-                // 此处可对 data 作相关处理
-                alert('充值成功！');
-                Window.href="muyee_cityinedx.html";
+    },
+        30000);
+function Push(id) {
+        $.ajax({
+               url: '',//string类型的参数，发送请求的地址
+                 type: 'POST',//请求方式（post or get）默认为get
+                 contenType: "application/json;charset-utf-8",//发送信息至服务器时内容编码类型
+                 dataType: 'text',//预期服务器返回的数据类型
+                 data: {"shareamount":shareamount},//发送的请求数据
+                 success: function (data) {
+                     var goods = '';
+            $.each(data, function(k, v) {
+               
+            goods+='<div class="tu_right">
+								<p align="center"><a id="shareamount">'+v.shareamount+'</a></p>
+								<p align="center"><a id="shareamounts"></a></p>
+								
+		</div>';
+		  
+            });
+            $('.tu_right').html(goods);
+                 }
+            });
             }
-          /*  $('regis').resetForm(); // 提交后重置表单*/
-        });
-        return false; // 阻止表单自动提交事件
-    
-});
-});
+    });
+            </script>
+            	<!--
+        无刷新更新数据2
+        -->
+        
+        <script>
+        	setTimeout(function() {
+             Push();
+           },
+        200);
+      /*30轮询读取函数*/
+        setInterval(function() {
+
+            Push();
+
+    },
+        30000);
+function Push(id) {
+        $.ajax({
+               url: '',//string类型的参数，发送请求的地址
+                 type: 'POST',//请求方式（post or get）默认为get
+                 contenType: "application/json;charset-utf-8",//发送信息至服务器时内容编码类型
+                 dataType: 'text',//预期服务器返回的数据类型
+                 data: {"allshareamount":allshareamount},//发送的请求数据
+                 success: function (data) {
+                     var goods = '';
+            $.each(data, function(k, v) {
+               
+            goods+='<div class="tu_right">
+								<p align="center"><a id="shareamount">'+v.allshareamount+'</a></p>
+								<p align="center"><a id="allshareamounts"></a></p>
+								
+		</div>';
+		  
+            });
+            $('.tu_right1').html(goods);
+                 }
+            });
+            }
+    });
+            </script>
+		<!--
+        组装数据表格
+        -->
+<script>
+ /*第一次读取最新通知*/
+  setTimeout(function() {
+             Push();
+           },
+        200);
+      /*30轮询读取函数*/
+        setInterval(function() {
+
+            Push();
+
+    },
+        30000);
+
+/*请求函数的ajax*/
+function Push(id) {
+
+    $.ajax({
+        type: "post",
+        url: "",
+        data: {
+            'id': id
+        },
+        async: true,
+        dataType: 'json',
+        success: function(data) {
+            var goods = '';
+            $.each(data, function(k, v) {
+               
+            goods+='<tr class="tqnr" id="tqnrtwo">';
+		 goods +='<td class="trq" id="trqname">'+v.tname+'</td>';
+		 goods +='<td class="trq" id="tqrtime">'+v.ttime+'</td>';
+		 goods +='<td class="trq" id="tqrnr">'+v.tnr+'</td>';
+		 goods +='<td class="trq" id="tqrjl">'+v.tjl+'</td></tr>';		        
+            });
+            $('#quicktable table').html(goods);
+        }
+    });
+}
+    });
 </script>
 	
 </body>

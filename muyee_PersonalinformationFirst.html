@@ -86,14 +86,17 @@
 							</div>
 							<div class="quick-press">
 								<h4>贷款申请</h4>
-								<form action="" method="post">
-									<input type="text" name="phone" id="phone" placeholder="电话"/>
-									<input type="text" name="tag" id="tag" placeholder="性别"/>
-									<input type="text" name="muyee_money" id="muyee_money" placeholder="金额"/>
+								<form action="" method="post" id="jsForm">
+									<input type="text" name="phone" id="phone" placeholder="电话" required data-rule-mobile="true" data-msg-required="请输入手机号" data-msg-mobile="请输入正确格式" />
+									<input type="text" name="tag" id="tag" placeholder="性别" required/>
+									<input type="text" name="muyee_money" id="muyee_money" placeholder="金额" required/>
+									
 									<button type="button" class="save">l</button>
 									<button type="button" class="delet">m</button>
+									
 									<button type="submit" class="submit" name="submit">提交</button>
 								</form>
+								
 							</div>
 							
 						</div>
@@ -131,5 +134,40 @@
 
 	</div>
 	</div>
+	<script src="js/jquery.js"></script>
+	<script src="js/jquery.validate.js"></script>
+<script>
+$(function(){
+    //jquery.validate
+	$("#jsForm").validate({
+		submitHandler: function() {
+			//验证通过后 的js代码写在这里
+		}
+	})
+		
+})
+
+$.validator.setDefaults({
+	errorElement:'span'
+});
+
+//配置通用的默认提示语
+$.extend($.validator.messages, {
+	required: '必填',
+    equalTo: "请再次输入相同的值"
+});
+
+
+
+//手机验证规则  
+jQuery.validator.addMethod("mobile", function (value, element) {
+    var mobile = /^1[3|4|5|7|8]\d{9}$/;
+	return this.optional(element) || (mobile.test(value));
+}, "手机格式不对");
+
+
+
+</script>
+
 </body>
 </html>

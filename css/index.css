@@ -3551,9 +3551,10 @@ table.HG_tabele_jiekuan tr:hover td{ background: #f9f9f9; cursor: pointer}
 			-moz-box-sizing:border-box;
 			box-sizing:border-box;
 			height: 35px;
-			line-height: 15px;
+		
+			line-height:15px;
 			padding: 10px 0;
-			margin:0 0 7px 0;
+			margin:0 0 8.2px 0;
 			background-color: rgb(246,246,246);
 			outline: none;
 			border: none;
@@ -3949,7 +3950,7 @@ background: #f6bb42;
 background: #ea89bf;
 	
 }
-#quick3 .quick2first ul li .tu_right #shareamount,#shareamounts,#allshareamount,#allshareamounts{
+#quick3 .quick2first ul li .tu_right #shareamount,#shareamounts,#shareamountn,#allshareamountn,#allshareamount,#allshareamounts{
 	color: white;
   position: relative;
   top: 10px;
@@ -3958,7 +3959,7 @@ background: #ea89bf;
 #quicktable{
 	margin-left: 3px;
 	width: 77.2%;
-	height: 500px;
+	height: auto;
 	margin-top: 10px;
 }
 #quicktable .tqd .trq{
@@ -3966,5 +3967,19 @@ background: #ea89bf;
 	width: 80px;
 	line-height: 30px;
 	background: #F1F1F1;
+	text-indent:5px;
+}
+#quicktable #tqnrtwo .trq{
+	height: 30px;
+	width: 80px;
+	line-height: 30px;
+	background: #F9F9F9;
+	text-indent:5px;
+}
+#quicktable #tqnrthree .trq{
+	height: 30px;
+	width: 80px;
+	line-height: 30px;
+	background: #F9F9F9;
 	text-indent:5px;
 }
