@@ -1,0 +1,207 @@
+<!DOCTYPE HTML>
+<html lang="en-US">
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+	<title>个人信息界面</title>
+
+	<link rel="stylesheet" type="text/css" href="css/index.css" media="all" />
+<style>
+	@font-face {
+			font-family: 'icomoon';
+			src:url('fonts/icomoon.eot');
+			src:url('fonts/icomoon.eot?#iefix') format('embedded-opentype'),
+				url('fonts/icomoon.woff') format('woff'),
+				url('fonts/icomoon.ttf') format('truetype'),
+				url('fonts/icomoon.svg#icomoon') format('svg');
+			font-weight: normal;
+			font-style: normal;
+</style>
+<div id="hy">
+	<div class="hyname">
+		<p><img src="img/rs6.PNG" width="30px">&nbsp;<a id="muyee_username">1375258663</a><span class="right_n">我的余额&nbsp;:&nbsp;<a id="muyee_personalmoney" style="color: white;">1300</a>元&nbsp;<input type="button" class="muyee_cz" value="充值" onclick="window.location='muyee_Join_hy.html'"></span></p>
+	</div>
+</div>
+<!--
+会员信息层
+-->
+		<div id="pagebg">
+	<div class="page">
+		
+		<section class="demo">
+			
+			<div class="admin-panel clearfix">
+				
+				<div class="slidebar">
+					<div class="logo">
+						<a href=""></a>
+					</div>
+					<ul>
+						<li ><a id="targeted"  href="muyee_PersonalinformationFirst.html">我的资料</a></li>
+						<li><a href="muyee_PersonalinformationTwo.html">密码修改</a></li>
+						<li><a href="muyee_PersonalinformationThree.html">身份信息</a></li>
+						<li><a >增票服务</a></li>
+						<li><a href="muyee_PersonalinformationFive.html">会员充值</a></li>
+						<li><a href="muyee_PersonalinformationSix.html">我sai我sai</a></li>
+						<li><a href="muyee_PersonalinformationSeven.html">分享有礼</a></li>
+						
+						<li class="cur"><a  href="muyee_PersonalinformationNight.html">第三方登陆绑定</a></li>
+						
+						<li><a >比银IM</a></li>
+						<li><a >小白工具</a></li>
+						<li><a >支付宝芝麻信用</a></li>
+						<li><a >京东白条信用</a></li>
+						<li><a >中移动小白信用</a></li>
+					</ul>
+				</div>
+				<div class="main">
+					<ul class="topbar clearfix">
+						<li><a href="#">q</a></li>
+						<li><a href="#">p</a></li>
+						<li><a href="#">o</a></li>
+						<li><a href="#">f</a></li>
+						<li><a href="#">n</a></li>
+					</ul>
+					<div class="mainContent clearfix" >
+						<div id="dashboard">
+							<h2 class="header"><span class="icon"></span>资料</h2>
+							<div class="monitor">
+								<div class="quick-press">
+								<h4>绑定QQ账号</h4>
+								<form action="" method="post" id="jsform">
+									<input type="text" name="QQ" id="QQ" placeholder="输入QQ号码"/>
+									<input type="text" name="QQpassword" id="QQpassword" placeholder="输入QQ密码"/>
+									
+									<button type="button" class="save">l</button>
+									<button type="button" class="delet">m</button>
+									<button type="submit" class="submit" id="getmsg" name="submit">提交</button>
+								</form>
+								
+							</div>
+								<br />
+								<br />
+								
+								<p>您个人还未绑定<a href="">微信/QQ</a>展示(未完善信息请尽快完善)</p>
+							</div>
+							<div class="quick-press">
+								<h4>绑定微信账号</h4>
+								<form action="" method="post" id="jsform">
+									<input type="text" name="weichat" id="weichat" placeholder="输入微信账号"/>
+									<input type="text" name="weichatpassword" id="weichatpassword" placeholder="输入微信密码"/>
+								
+									<button type="button" class="save">l</button>
+									<button type="button" class="delet">m</button>
+									<button type="submit" class="submit" id="getmsg" name="submit">提交</button>
+								</form>
+								<div style="clear: both;"></div>
+								<br />
+								
+								<p style="margin-left: 15px;color: #888888;">您个人还未绑定<a href="" style="color:#1b6aad;">微信/QQ</a>展示(未完善信息请尽快完善)</p>
+								<br />
+								
+							</div>
+							
+						</div>
+					
+					<ul class="statusbar">
+						<li><a href=""></a></li>
+						<li><a href=""></a></li>
+						<li class="profiles-setting"><a href="">s</a></li>
+						<li class="logout"><a href="">k</a></li>
+					</ul>
+				</div>
+				<div class="quick-press1">
+					<div class="ql">
+						<strong>可能需要的帮助</strong><br />
+						
+						<ul>
+							<li><a>1、借款所需费用</a></li>
+							<li><a href="muyee_CalculatorMortgageloans.html">2、借款计算器</a></li>
+							<li><a>3、借款审核需多少时间</a></li>
+							<li><a>4、审核通过后多久放款</a></li>
+							<li><a>5、什么时候开始还款</a></li>
+							<li><a>6、如何用网银还款</a></li>
+						</ul>
+					</div>
+					<div class="qr">
+						<p align="center"><img src="img/erweima.png"></p>
+						<p align="center">关注比银公众号</p>
+						
+					</div>
+					
+				</div>
+			</div>
+			
+		</section>
+
+	</div>
+	</div>
+	<script src="js/jquery.js"></script>
+	<script src="js/jQuery.Form.js"></script>
+	<!--
+  QQ绑定
+    -->
+    <script>
+$('#getmsg').on('click', function() {
+
+    $('#jsform').on('submit', function() {
+        var  QQpassword= $('input[name=QQpassword]').val(),
+         QQ= $('input[name=QQ]').val();
+     
+        
+   
+
+        $(this).ajaxSubmit({
+            type: 'post', // 提交方式 get/post
+            url: 'xx', // 需要提交的 url
+            data: {
+                'QQpassword': QQpassword,
+                'QQ':QQ
+              
+            },
+            success: function(data) { // data 保存提交后返回的数据，一般为 json 数据
+                // 此处可对 data 作相关处理
+                alert('提交成功！');
+             
+            }
+        
+        });
+        return false; // 阻止表单自动提交事件
+    
+});
+});
+    </script>
+    	<!--
+  QQ绑定
+    -->
+    <script>
+$('#getmsg').on('click', function() {
+
+    $('#jsform').on('submit', function() {
+        var  weichatpassword= $('input[name=weichatpassword]').val(),
+         weichat= $('input[name=weichat]').val();
+     
+        
+   
+
+        $(this).ajaxSubmit({
+            type: 'post', // 提交方式 get/post
+            url: 'xx', // 需要提交的 url
+            data: {
+                'weichatpassword': weichatpassword,
+                'weichat':weichat
+              
+            },
+            success: function(data) { // data 保存提交后返回的数据，一般为 json 数据
+                // 此处可对 data 作相关处理
+                alert('提交成功！');
+             
+            }
+        
+        });
+        return false; // 阻止表单自动提交事件
+    
+});
+});
+    </script>
+</body>
+</html>
