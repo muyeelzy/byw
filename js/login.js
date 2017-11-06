@@ -102,34 +102,36 @@
 	});
 
 	//密码栏失去焦点(mainform1)
-	$(".password,.password1").blur(function(){
+	$(".passwordN").blur(function(){
 		reg1=/^.*[\d]+.*$/;
 		reg2=/^.*[A-Za-z]+.*$/;
 		reg3=/^.*[_@#%&^+-/*\/\\]+.*$/;//验证密码
 		if($(".pwdBtnShow").attr("isshow")=="false")
 		{
-			var Pval = $(".password").val();
+			var Pval = $(".passwordN").val();
 		}
 		else
 		{
-			var Pval = $(".password1").val();
+			var Pval = $(".passwordN").val();
 		}
 		
 		if( Pval =="")
 		{
-			$(".password").parent().addClass("errorC");
+			$(".passwordN").parent().addClass("errorC");
 			$(".error3").html("请填写密码");
 			$(".error3").css("display","block");
+		
+			
 		}
         else if(Pval.length>16 || Pval.length<8)
         {   
-        	$(".password").parent().addClass("errorC");
+        	$(".passwordN").parent().addClass("errorC");
             $(".error3").html("密码应为8-16个字符，区分大小写");
             $(".error3").css("display","block");
         }
         else if(!((reg1.test(Pval) && reg2.test(Pval)) || (reg1.test(Pval) && reg3.test(Pval)) || (reg2.test(Pval) && reg3.test(Pval)) ))
         {
-        	$(".password").parent().addClass("errorC");
+        	$(".passwordN").parent().addClass("errorC");
             $(".error3").html("需至少包含数字、字母和符号中的两种类型");
             $(".error3").css("display","block");
         }

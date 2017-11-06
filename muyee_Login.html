@@ -78,8 +78,9 @@
                    <input type="text" class="phone" id="phone" name="phone" maxlength="11"   placeholder="手机号" required data-rule-mobile="true" data-msg-required="请输入手机号" data-msg-mobile="请输入正确格式" required/>
                 </div>
             </p>
+            <span class="error error1"></span>
 			</div>
-			<span class="error error1"></span>
+			
 			<div class="normalInput">			
 					<p class="bl-form-group">         
                 <div class="controls">
@@ -88,8 +89,9 @@
             </p>
 				<span class="formLine"></span>
 				<input type="text" href="##" id="getKey" class="linkABlue" readonly="ture"  onclick="sendMessage3()"  placeholder="获取验证码"/><a id="jbPhoneTip3" class="yzmtips"></a>			
+				<span class="error error2"></span>	
 			</div>
-			<span class="error error2"></span>			
+				
 			<button type="submit"  class="fullBtnBlue">登  陆</button>
 		</form>		
 	</div>
@@ -109,21 +111,39 @@
                 </div>
             </p>
 				<span class="grayTip"></span>
+					<span class="error error1"></span>		
 			</div>
-			<span class="error error1"></span>		
+		
 			<div class="normalInput">
 				<!--<input type="text" id="passwordN" class="passwordN" name="password" maxlength="16" autocomplete="off" placeholder="密码">-->
-					<a class="bl-form-group">               
+					<p class="bl-form-group">               
                 <div class="controls">
                    <input  type="text" id="passwordN" class="passwordN" name="password" maxlength="16" autocomplete="off" placeholder="密码"  required />
+                   
+						 
                 </div>
-            </a>
-				<input type="password" class="password1N" maxlength="16" autocomplete="off" placeholder="密码">
+                <input type="password" class="password1N" maxlength="16" autocomplete="off" placeholder="密码">
+				
+				<p id="pwdBtnN" href="##" class="pwdBtnShowN" isshow="false">
+					<i class="i_icon"></i>
+         <div style="clear: both;"></div>
+					
+				</p>
+				
+     
+         <span class="error error3"></span>
+            </p>
+       
+				<!--<input type="password" class="password1N" maxlength="16" autocomplete="off" placeholder="密码">
+				
 				<a id="pwdBtnN" href="##" class="pwdBtnShowN" isshow="false">
 					<i class="i_icon"></i>
-				</a>
+				</a>-->
+				
 			</div>
-			<span class="error error3"></span>
+	
+					
+			
 		    <button type="submit" class="fullBtnBlue">登  陆</button>			
 		</form>
 	</div>
