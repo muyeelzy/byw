@@ -240,7 +240,7 @@
 						
 							<p><label>贷款金额 &nbsp; &nbsp;</label><input type="text"  name="muyee_e"  placeholder="贷款金额"/></p>
 							<br />
-							<p><label>你的姓氏 &nbsp; &nbsp;</label><input type="text" class="muyee_x" name="muyee_x"  placeholder="你的姓氏"/>&nbsp;女<input type="radio" name="muyee_nv" tag="0" checked="checked" class="ra"/>&nbsp;男<input type="radio" name="muyee_nan" value="" class="ra"tag="0" /></p>
+							<p><label>你的姓氏 &nbsp; &nbsp;</label><input type="text" class="muyee_x" name="muyee_x"  placeholder="你的姓氏"/>&nbsp;女<input type="radio" name="muyee_nan"  checked="checked" class="ra"/>&nbsp;男<input type="radio" name="muyee_nan" value="" class="ra"  /></p>
 							<br />
 							
 							<p><label>联系手机 &nbsp;</label> <input id="mobile1"  type="text" name="mobile" value=""  class="muyee_number" placeholder="输入手机号码"/>  </p>
@@ -1142,19 +1142,7 @@ $(function() {
     })
 })
 </script>
-<script>
-        $(":radio").click(function () {
-                var r = $(this).attr("name");
-                $(":radio[name=" + r + "]:not(:checked)").attr("tag", 0);
-                if ($(this).attr("tag") == 1) {
-                    $(this).attr("checked", false);
-                    $(this).attr("tag", 0);
-                }
-                else {
-                    $(this).attr("tag",1);
-                }
-            });
-            </script>
+
             
               <script>
 	$(function(){
