@@ -1,10 +1,11 @@
-<!DOCTYPE HTML>
-<html lang="en-US">
+<!DOCTYPE html>
+<html>
 <head>
 	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 	<title>个人信息界面</title>
 
 	<link rel="stylesheet" type="text/css" href="css/index.css" media="all" />
+	
 <style>
 	@font-face {
 			font-family: 'icomoon';
@@ -16,6 +17,7 @@
 			font-weight: normal;
 			font-style: normal;
 </style>
+<body>
 <div id="hy">
 	<div class="hyname">
 		<p><img src="img/rs6.PNG" width="30px">&nbsp;<a id="muyee_username">1375258663</a><span class="right_n">我的余额&nbsp;:&nbsp;<a id="muyee_personalmoney" style="color: white;">1300</a>元&nbsp;<input type="button" class="muyee_cz" value="充值" onclick="window.location='muyee_Join_hy.html'"></span></p>
@@ -39,12 +41,12 @@
 						<li class="cur"><a id="targeted"  href="muyee_PersonalinformationFirst.html">我的资料</a></li>
 						<li><a href="muyee_PersonalinformationTwo.html">密码修改</a></li>
 						<li><a href="muyee_PersonalinformationThree.html">身份信息</a></li>
-						<li><a >增票服务</a></li>
-						<li><a >会员充值</a></li>
-						<li><a >我sai我sai</a></li>
-						<li><a >分享有礼</a></li>
+						<li><a href="">增票服务</a></li>
+						<li><a href="muyee_PersonalinformationFive.html">会员充值</a></li>
+						<li><a href="muyee_PersonalinformationSix.html">我sai我sai</a></li>
+						<li><a href="muyee_PersonalinformationSeven.html">分享有礼</a></li>
 						
-						<li><a >第三方登陆绑定</a></li>
+						<li><a href="muyee_PersonalinformationNight.html">第三方登陆绑定</a></li>
 						
 						<li><a >比银IM</a></li>
 						<li><a >小白工具</a></li>
@@ -69,8 +71,8 @@
 								<div class="clearfix">
 									<ul class="content">
 										<li>基本资料</li>
-										<li class="posts"><span class="count">apple</span><a href="">姓名</a></li>
-										<li class="pages"><span class="count">男</span><a href="">姓名</a></li>
+										<li class="posts"><span class="count">13727377517</span><a href="">姓名</a></li>
+										<li class="pages"><span class="count">男</span><a href="">性别</a></li>
 										<li class="categories"><span class="count">21</span><a href="">年龄</a></li>
 										<li class="tags"><span class="count">学生</span><a href="">职务</a></li>
 									</ul>
@@ -82,7 +84,7 @@
 										<li class="spam"><span class="count">羽毛球</span><a href="">爱好</a></li>
 									</ul>
 								</div>
-								<p>您个人<a href="">基本</a> 信息<a href="">展示(未完善信息请尽快完善)</a></p>
+								<p><a href="">您个人基本信息</a><a id="">(判断是否完善信息)</a></p>
 							</div>
 							<div class="quick-press">
 								<h4>贷款申请</h4>
@@ -108,6 +110,9 @@
 						<li class="logout"><a href="">k</a></li>
 					</ul>
 				</div>
+				<br />
+					<br />
+				<p align="center"><img src="images/gjj.png"></p>
 				<div class="quick-press1">
 					<div class="ql">
 						<strong>可能需要的帮助</strong><br />
@@ -128,46 +133,16 @@
 					</div>
 					
 				</div>
+				
 			</div>
 			
 		</section>
 
 	</div>
 	</div>
+
+
 	<script src="js/jquery.js"></script>
-	<script src="js/jquery.validate.js"></script>
-<script>
-$(function(){
-    //jquery.validate
-	$("#jsForm").validate({
-		submitHandler: function() {
-			//验证通过后 的js代码写在这里
-		}
-	})
-		
-})
-
-$.validator.setDefaults({
-	errorElement:'span'
-});
-
-//配置通用的默认提示语
-$.extend($.validator.messages, {
-	required: '必填',
-    equalTo: "请再次输入相同的值"
-});
-
-
-
-//手机验证规则  
-jQuery.validator.addMethod("mobile", function (value, element) {
-    var mobile = /^1[3|4|5|7|8]\d{9}$/;
-	return this.optional(element) || (mobile.test(value));
-}, "手机格式不对");
-
-
-
-</script>
-
+	
 </body>
 </html>

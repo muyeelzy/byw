@@ -56,7 +56,7 @@
 		
  <div id="firstpane" class="menu_list">
     <p class="menu_head current">房贷计算器</p>
-    <div style="display:block" class=menu_body >
+    <div style="display:none" class=menu_body >
       <a href="muyee_CalculatorMortgageloans.html" >按揭房贷计算器</a>
       <a href="muyee_CalculatorAccumulationfund.html" >公积金贷款计算器</a>
       <a href="muyee_CalculatorProvidentcommercial.html">组合房贷计算器</a>
@@ -102,10 +102,10 @@
      
     </div>
     <p class="menu_head">其他计算器</p>
-    <div style="display:none" class=menu_body >
+    <div style="display:block" class=menu_body >
       <a href="muyee_CalculatorForeigncurrencydh.html">外币兑换计算器</a>
       <a href="muyee_CalculatorForeigncurrencygrsds.html">个人所得税计算器</a>
-      <a href="muyee_CalculatorForeigncurrencyylbx.html" class="font-color" > >养老保险计算器</a>
+      <a href="muyee_CalculatorForeigncurrencyylbx.html" class="font-color" >养老保险计算器</a>
       <a href="muyee_CalculatorForeigncurrencywxyj.html">五金一险计算器</a>
      
     </div>
@@ -1712,12 +1712,12 @@ view.init('endowment');
 
 	<script type=text/javascript>
 $(document).ready(function(){
-	$("#firstpane .menu_body:eq(0)").show();
+	$("#firstpane .menu_body:eq(6)").show();
 	$("#firstpane p.menu_head").click(function(){
 		$(this).addClass("current").next("div.menu_body").slideToggle(300).siblings("div.menu_body").slideUp("slow");
 		$(this).siblings().removeClass("current");
 	});
-	$("#secondpane .menu_body:eq(0)").show();
+	$("#secondpane .menu_body:eq(6)").show();
 	$("#secondpane p.menu_head").mouseover(function(){
 		$(this).addClass("current").next("div.menu_body").slideDown(500).siblings("div.menu_body").slideUp("slow");
 		$(this).siblings().removeClass("current");

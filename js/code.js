@@ -32,36 +32,5 @@ $(function() {
         }  
     });  
 });  
-$(function() {  
-    var code = 9999; 
-    function codes(){
-    	
-        var ranColor = '#' + ('00000' + (Math.random() * 0x1000000 << 0).toString(16)).slice(-6); //随机生成颜色
-    	// alert(ranColor)
-    	var ranColor2 = '#' + ('00000' + (Math.random() * 0x1000000 << 0).toString(16)).slice(-6); 
-     	var num1 = Math.floor(Math.random() * 100);  
-        var num2 = Math.floor(Math.random() * 100);  
-        code = num1 + num2;  
-        
-        $("#code1").html(num1 + "+" + num2 + "=?");  
-        if ($("#code1").hasClass("nocode1")) {  
-            $("#code1").removeClass("nocode1");  
-            $("#code1").addClass("code1"); 
-           
-        }  
-        $("#code1").css('background',ranColor);
-         $("#code1").css('color',ranColor2);
 
-    }
-    codes()
-   
-    $("#code1").on('click',codes)
-      
-    $(".check1").click(function(){ 
-        if ($(".input").val() == code && code != 9999) {  
-            alert("正确!");  
-        } else {  
-            alert("输入有误!");  
-        }  
-    });  
-});  
+

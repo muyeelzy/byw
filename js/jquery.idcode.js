@@ -1,18 +1,4 @@
-/**
- * idcode 1.0 - validate user.
- * Version 1.0
- * @requires jQuery v1.2
- * author ehong[idehong@gmail.com]
- **/
 
-/**
- * @example: $.idcode.setCode();	
- * @desc: Make a validate code append to the element that id is idcode.
- *
- * @example $.idcode.validateCode();	
- * @desc return true if user input value equal idcode. 
- **/
- 
 (function($){
 	var settings = {
 			e	 		: 'idcode',

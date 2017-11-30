@@ -51,8 +51,8 @@
 		<div id="Consultant">
 		
  <div id="firstpane" class="menu_list">
-    <p class="menu_head current">个人贷款计算器</p>
-    <div style="display:block" class=menu_body >
+    <p class="menu_head ">个人贷款计算器</p>
+    <div style="display:none" class=menu_body >
       <a href="muyee_CalculatorMortgageloans.html" >按揭房贷计算器</a>
       <a href="muyee_CalculatorAccumulationfund.html" >公积金贷款计算器</a>
       <a href="muyee_CalculatorProvidentcommercial.html">组合房贷计算器</a>
@@ -69,7 +69,7 @@
     
     </div>
     <p class="menu_head">还款计算器</p>
-    <div style="display:none" class=menu_body >
+    <div style="display:block" class=menu_body >
       <a href="muyee_CalculatorPersonaldebj.html"  >等额本金还款计算器</a>
       <a href="muyee_CalculatorPersonaldebx.html" >等额本息还款计算器</a>
       <a href="muyee_CalculatorPersonalajdk.html">按揭贷款计算器</a>
@@ -404,8 +404,8 @@
 <div class="jsp_zongjia pt4">
                     <div class="dxJsp_gjjsy1">
                             <ul>                        	                           
-                            <li>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;原月还款额：<input class="txt1" id="ykhke" name="ykhke" readonly="readonly" type="text">元</li>                   
-                            <li>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;已还款总额：<input class="txt1"  id="yhkze" name="yhkze" readonly="readonly" type="text">元</li>                     
+                            <li>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;原月还款额：<input class="txt1" id="ykhke" name="ykhke" readonly="readonly" type="text">元</li>                   
+                            <li>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;已还款总额：<input class="txt1"  id="yhkze" name="yhkze" readonly="readonly" type="text">元</li>                     
                             <li>该月一次还款额：<input class="txt1"  id="gyyihke" name="gyyihke" readonly="readonly" type="text">元</li>
                             <li>&nbsp;&nbsp;&nbsp;节省利息支出：<input class="txt1"  id="jslxzc" name="jslxzc" readonly="readonly" type="text">元</li>                     
                             <li>&nbsp;&nbsp;&nbsp;计算结果提示：<input class="txt1" id="jsjgts" name="jsjgts" readonly="readonly" type="text">元</li>                           
@@ -414,7 +414,7 @@
                     <div class="dxJsp_gjjsy1">
                         <ul>                       	                           
                             <li>&nbsp;&nbsp;&nbsp;原最后还款期：<input class="txt1"  id="yzhhkq" name="yzhhkq" readonly="readonly" type="text"></li>                   
-                            <li>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 已还利息额：<input class="txt1"  id="yhlxe" name="yhlxe" readonly="readonly" type="text">元</li>                     
+                            <li>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 已还利息额：<input class="txt1"  id="yhlxe" name="yhlxe" readonly="readonly" type="text">元</li>                     
                             <li>下月起月还款额：<input class="txt1" id="xyqyhke" name="xyqyhke" readonly="readonly" type="text">元</li>
                             <li>新的最后还款期：<input class="txt1"  id="xdzhhkq" name="xdzhhkq" readonly="readonly" type="text"></li>  
                         </ul>
@@ -464,12 +464,12 @@
 
 	<script type=text/javascript>
 $(document).ready(function(){
-	$("#firstpane .menu_body:eq(0)").show();
+	$("#firstpane .menu_body:eq(2)").show();
 	$("#firstpane p.menu_head").click(function(){
 		$(this).addClass("current").next("div.menu_body").slideToggle(300).siblings("div.menu_body").slideUp("slow");
 		$(this).siblings().removeClass("current");
 	});
-	$("#secondpane .menu_body:eq(0)").show();
+	$("#secondpane .menu_body:eq(2)").show();
 	$("#secondpane p.menu_head").mouseover(function(){
 		$(this).addClass("current").next("div.menu_body").slideDown(500).siblings("div.menu_body").slideUp("slow");
 		$(this).siblings().removeClass("current");

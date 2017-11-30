@@ -48,13 +48,13 @@
 		<!--
         	贷款计算器
         -->
-         <div id="conjsqbg3"  style="height:1500px; width:100%; margin: 0 auto; background:#E0E0E0;margin:10px auto;" >
+         <div id="conjsqbg3"  style="height:1500px; width:100%; margin: 0 auto; background:white;margin:10px auto;" >
         	<div id="conjsqbg2" style="height:1200px; width: 1100px; margin: 0 auto; position: relative; top: 40px; background: white;">
 		<div id="Consultant">
 		
  <div id="firstpane" class="menu_list">
     <p class="menu_head current">房贷计算器</p>
-    <div style="display:block" class=menu_body >
+    <div style="display: none;"class=menu_body >
       <a href="muyee_CalculatorMortgageloans.html" >按揭房贷计算器</a>
       <a href="muyee_CalculatorAccumulationfund.html" >公积金贷款计算器</a>
       <a href="muyee_CalculatorProvidentcommercial.html">组合房贷计算器</a>
@@ -65,7 +65,7 @@
       <a href="muyee_Calculatorpublicfund.html">住房公积金计算器</a>
     </div>
     <p class="menu_head">车贷计算器</p>
-    <div style="display:none" class=menu_body >
+    <div style="display:block"  class=menu_body >
       <a href="muyee_CalculatorCarcomprehensive.html" >购车综合计算器</a>
       <a href="muyee_CalculatorCarloan.html" class="font-color">汽车贷款计算器</a>
     
@@ -305,12 +305,12 @@
 <script src="js/jquery.js"></script>
 	<script type=text/javascript>
 $(document).ready(function(){
-	$("#firstpane .menu_body:eq(0)").show();
+	$("#firstpane .menu_body:eq(1)").show();
 	$("#firstpane p.menu_head").click(function(){
 		$(this).addClass("current").next("div.menu_body").slideToggle(300).siblings("div.menu_body").slideUp("slow");
 		$(this).siblings().removeClass("current");
 	});
-	$("#secondpane .menu_body:eq(0)").show();
+	$("#secondpane .menu_body:eq(1)").show();
 	$("#secondpane p.menu_head").mouseover(function(){
 		$(this).addClass("current").next("div.menu_body").slideDown(500).siblings("div.menu_body").slideUp("slow");
 		$(this).siblings().removeClass("current");
